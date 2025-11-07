@@ -184,6 +184,7 @@ void loop()
 		logger.debug("Loop/sec: %d", ticks);
 		Haptics::Wireless::printMetrics();
 		Haptics::PwmUtils::printAllDuty();
+		logger.debug("THIS IS MY FORKED VERSION");
 
 #if !defined(ESP8266)
 		// ESP32 has temperature sensor
