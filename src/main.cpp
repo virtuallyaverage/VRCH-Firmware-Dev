@@ -125,6 +125,7 @@ time_t lastOtaTick = millis();
 uint32_t loopStart = 0;
 uint32_t loopTotal = 0;
 bool messageRecieved = false;
+uint8_t messages = 0;
 
 void loop()
 {
@@ -153,6 +154,7 @@ void loop()
 	if (Haptics::globals.processOscCommand)
 	{
 		// if we were sent a command over OSC
+		Haptics::lastPacketMs = millis();
 		messageRecieved = true;
 		const String response = Haptics::Conf::Parser::parseInput(Haptics::globals.commandToProcess);
 		OscMessage commandResponse(COMMAND_ADDRESS);
@@ -197,7 +199,7 @@ void loop()
 
 		// we should recieve atleast one message over a second if we are connected/
 		// if we arent connected we should broadcast each second
-		if (now - Haptics::lastPacketMs > 1000)
+		if (now - Haptics::lastPacketMs > 3000)
 		{
 			// Reset all motors to zero if we don't have a connection.
 			for (uint16_t i = 0; i < MAX_MOTORS; i++) {

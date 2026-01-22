@@ -148,8 +148,6 @@ namespace Haptics
         ///
         void updateMotorVals()
         {
-            lastPacketMs = millis();
-
             const uint16_t totalMotors = Haptics::Conf::conf.motor_map_i2c_num + Haptics::Conf::conf.motor_map_ledc_num;
             const int64_t bumpTime = Haptics::Conf::conf.bump_time_us;
             // Get microsecond timestamp for both platforms

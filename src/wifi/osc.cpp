@@ -92,21 +92,35 @@ namespace Haptics
             broadcastMessage += "}";
 
             // ESP8266 beginMulticast requires interface address
-#if defined(ESP8266)
-            udpClient.beginMulticast(WiFi.localIP(), IPAddress(MULTICAST_GROUP), MULTICAST_PORT);
-#else
-            udpClient.beginMulticast(IPAddress(MULTICAST_GROUP), MULTICAST_PORT);
-#endif
-            Broadcast(); // broadcast first time
+            #if defined(ESP8266)
+                BroadcastUdpClient.beginMulticast(WiFi.localIP(), IPAddress(MULTICAST_GROUP), MULTICAST_PORT);
+            #else
+                BroadcastUdpClient.beginMulticast(IPAddress(MULTICAST_GROUP), MULTICAST_PORT);
+            #endif
         }
 
         void Broadcast()
         {
             // Send broadcast
             logger.debug("broadcast message: %s", broadcastMessage.c_str());
-            udpClient.beginPacket(IPAddress(MULTICAST_GROUP), MULTICAST_PORT);
-            udpClient.write((uint8_t *)broadcastMessage.c_str(), broadcastMessage.length()); // Send data
-            udpClient.endPacket();                                                           // Ensure packet is sent
+    
+            // set our client to send to multicast
+            #if defined(ESP8266)
+                BroadcastUdpClient.beginMulticast(WiFi.localIP(), IPAddress(MULTICAST_GROUP), MULTICAST_PORT);
+            #else
+                BroadcastUdpClient.beginMulticast(IPAddress(MULTICAST_GROUP), MULTICAST_PORT);
+            #endif
+            
+            #if defined(ESP8266)
+                BroadcastUdpClient.beginPacketMulticast(IPAddress(MULTICAST_GROUP), MULTICAST_PORT, WiFi.localIP(), 2);
+            #else
+                BroadcastUdpClient.beginMulticastPacket();
+            #endif
+            BroadcastUdpClient.write((uint8_t *)broadcastMessage.c_str(), broadcastMessage.length()); // Send data
+            BroadcastUdpClient.endPacket();
+
+            // set back to normal
+            BroadcastUdpClient.begin(SEND_PORT);
         }
 
         bool WiFiConnected()
@@ -174,15 +188,15 @@ namespace Haptics
                     break;
                 case RADIO_KEEPALIVE_BALANCED:
                     if (keepaliveTicker*WIRELESS_TICK_MS >= RADIO_KEEPALIVE_BALANCED_MS) {
-                        udpClient.beginPacket(hostIP, sendPort);
-                        udpClient.endPacket();
+                        BroadcastUdpClient.beginPacket(hostIP, sendPort);
+                        BroadcastUdpClient.endPacket();
                         keepaliveTicker = 0;
                     } else keepaliveTicker += 1;
                     break;
                 case RADIO_KEEPALIVE_AGGRESSIVE:
                     if (keepaliveTicker*WIRELESS_TICK_MS >= RADIO_KEEPALIVE_AGGRESSIVE_MS) {
-                        udpClient.beginPacket(hostIP, sendPort);
-                        udpClient.endPacket();
+                        BroadcastUdpClient.beginPacket(hostIP, sendPort);
+                        BroadcastUdpClient.endPacket();
                         keepaliveTicker = 0;
                     } else keepaliveTicker += 1;
                     break;

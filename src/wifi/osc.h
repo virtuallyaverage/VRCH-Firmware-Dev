@@ -25,7 +25,7 @@ namespace Wireless {
 
 // OSC client to send messages back to the hosts
 inline OscWiFiClient oscClient;
-inline WiFiUDP udpClient;
+inline WiFiUDP BroadcastUdpClient;
 inline String hostIP_str;
 inline IPAddress hostIP;
 inline uint16_t sendPort;

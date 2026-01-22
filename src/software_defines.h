@@ -28,8 +28,10 @@
 #define RADIO_KEEPALIVE_BALANCED_MS 100
 #define RADIO_KEEPALIVE_AGGRESSIVE 2
 #define RADIO_KEEPALIVE_AGGRESSIVE_MS 50
+#define WIRELESS_DISCONNECT_THRESH_MS 1000 /*assumes we have lost connection after this long*/
 #define OSC_MOTOR_CHAR_NUM 4
 #define RECIEVE_PORT 1027
+#define SEND_PORT 1037
 #define MULTICAST_PORT 6868
 #define MULTICAST_GROUP 239,0,0,1
 #define AP_NAME "Haptics-Connect-To-Me"
