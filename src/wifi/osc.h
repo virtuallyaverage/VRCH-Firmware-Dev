@@ -26,9 +26,13 @@ namespace Wireless {
 // OSC client to send messages back to the hosts
 inline OscWiFiClient oscClient;
 inline WiFiUDP udpClient;
-inline String hostIP;
+inline String hostIP_str;
+inline IPAddress hostIP;
 inline uint16_t sendPort;
 inline String broadcastMessage;
+
+inline uint8_t keepaliveTicker; // counts intervals between radio management points.
+inline uint8_t otaTicker;
 
 //publisher references
 inline OscPublishElementRef heartbeatPublisher;

@@ -22,6 +22,12 @@
 #define MIN_TEMP_COOLDOWN 80.0
 
 /// Wireless defines
+#define WIRELESS_TICK_MS 7 /*atleast this much time must have passed before next wireless tick*/
+#define RADIO_KEEPALIVE_OFF 0
+#define RADIO_KEEPALIVE_BALANCED 1
+#define RADIO_KEEPALIVE_BALANCED_MS 100
+#define RADIO_KEEPALIVE_AGGRESSIVE 2
+#define RADIO_KEEPALIVE_AGGRESSIVE_MS 50
 #define OSC_MOTOR_CHAR_NUM 4
 #define RECIEVE_PORT 1027
 #define MULTICAST_PORT 6868
@@ -37,6 +43,7 @@
 #define PING_ADDRESS "/ping"
 #define COMMAND_ADDRESS "/command"
 #define MOTOR_ADDRESS "/h"
+#define DONOTHING_ADDRESS "/"
 
 // internal (calculated for 64 motors on each)
 #define JSON_SIZE 4096

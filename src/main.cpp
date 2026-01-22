@@ -9,8 +9,6 @@
 #include <esp_bt.h>
 #endif
 
-#include "ota.h"
-
 // main config files
 #include "globals.h"
 #include "config/config.h"
@@ -59,9 +57,14 @@ void setup()
 	Haptics::initGlobals();
 
 	Haptics::Wireless::Start(&Haptics::Conf::conf);
-	OTA::otaSetup(OTA_PASS);
-	Haptics::PCA::start(&Haptics::Conf::conf);
-	Haptics::LEDC::start(&Haptics::Conf::conf);
+	if (Haptics::Conf::conf.motor_map_i2c_num) {
+		Haptics::PCA::start(&Haptics::Conf::conf);
+	}
+	if (Haptics::Conf::conf.motor_map_ledc_num) {
+		Haptics::LEDC::start(&Haptics::Conf::conf);
+	}
+	logger.debug("Finished initialization");
+	
 }
 
 void enterLimp()
@@ -125,10 +128,6 @@ bool messageRecieved = false;
 
 void loop()
 {
-	if (now - lastOtaTick >= OTA_UPDATE_MS) {
-		OTA::otaUpdate();
-		lastOtaTick = millis();
-	}
 
 	if (Haptics::globals.reinitLEDC)
 	{ // prevents not defined error
@@ -158,7 +157,7 @@ void loop()
 		const String response = Haptics::Conf::Parser::parseInput(Haptics::globals.commandToProcess);
 		OscMessage commandResponse(COMMAND_ADDRESS);
 		commandResponse.pushString(response);
-		Haptics::Wireless::oscClient.send(Haptics::Wireless::hostIP, Haptics::Wireless::sendPort, commandResponse);
+		Haptics::Wireless::oscClient.send(Haptics::Wireless::hostIP_str, Haptics::Wireless::sendPort, commandResponse);
 		Haptics::globals.commandToProcess = "";
 		Haptics::globals.processOscCommand = false;
 	}
@@ -173,12 +172,13 @@ void loop()
 
 	ticks += 1;
 	now = millis();
-	if (now - lastWifiTick >= 7)
-	{ // Roughly 150hz
+	if (now - lastWifiTick >= WIRELESS_TICK_MS)
+	{ 
 		Haptics::Wireless::Tick();
 		lastWifiTick = now;
 	}
 
+	// handle debug stuff once every second
 	if (now - lastSerialPush >= 1000)
 	{
 		logger.debug("Loop/sec: %d", ticks);

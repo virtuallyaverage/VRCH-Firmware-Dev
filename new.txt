@@ -1,0 +1,1033 @@
+ dBm, Channel: 11
+[DEBUG] [Utils] No configured motors
+[DEBUG] [Main] Temp: 51.90 °C
+[DEBUG] [WIFI] broadcast message: 
+[DEBUG] [Main] Loop/sec: 144181
+[DEBUG] [Utils] No configured motors
+[DEBUG] [Main] Temp: 53.90 °C
+[DEBUG] [WIFI] broadcast message: 
+[ 12714][V][WiFiGeneric.cpp:363] _arduino_event_cb(): STA Disconnected: SSID: Sl1Er, BSSID: 00:00:00:00:00:00, Reason: 201
+[ 12725][D][WiFiGeneric.cpp:1040] _eventCallback(): Arduino Event: 5 - STA_DISCONNECTED
+[ 12733][W][WiFiGeneric.cpp:1062] _eventCallback(): Reason: 201 - NO_AP_FOUND
+[ 12740][D][WiFiGeneric.cpp:1086] _eventCallback(): WiFi AutoReconnect Running
+[ 12748][V][WiFiGeneric.cpp:97] set_esp_interface_ip(): Configuring Station static IP: 0.0.0.0, MASK: 0.0.0.0, GW: 0.0.0.0
+[DEBUG] [Main] Loop/sec: 137375
+[DEBUG] [WIFI] RSSI: 0 dBm, Channel: 7
+[DEBUG] [Utils] No configured motors
+[DEBUG] [Main] Temp: 51.90 °C
+[DEBUG] [WIFI] broadcast message: 
+[ 13513][E][WiFiUdp.cpp:185] endPacket(): could not send data: 118
+[DEBUG] [Main] Loop/sec: 144063
+[DEBUG] [WIFI] RSSI: 0 dBm, Channel: 13
+[DEBUG] [Utils] No configured motors
+[DEBUG] [Main] Temp: 53.90 °C
+[DEBUG] [WIFI] broadcast message: 
+[ 14514][E][WiFiUdp.cpp:185] endPacket(): could not send data: 118
+[ 15168][V][WiFiGeneric.cpp:363] _arduino_event_cb(): STA Disconnected: SSID: Sl1Er, BSSID: 00:00:00:00:00:00, Reason: 201
+[ 15179][D][WiFiGeneric.cpp:1040] _eventCallback(): Arduino Event: 5 - STA_DISCONNECTED
+[ 15187][W][WiFiGeneric.cpp:1062] _eventCallback(): Reason: 201 - NO_AP_FOUND
+[ 15194][D][WiFiGeneric.cpp:1086] _eventCallback(): WiFi AutoReconnect Running
+[ 15201][V][WiFiGeneric.cpp:97] set_esp_interface_ip(): Configuring Station static IP: 0.0.0.0, MASK: 0.0.0.0, GW: 0.0.0.0
+[DEBUG] [Main] Loop/sec: 137685
+[DEBUG] [WIFI] RSSI: 0 dBm, Channel: 3
+[DEBUG] [Utils] No configured motors
+[DEBUG] [Main] Temp: 54.90 °C
+[DEBUG] [WIFI] broadcast message: 
+[ 15514][E][WiFiUdp.cpp:185] endPacket(): could not send data: 118
+[DEBUG] [Main] Loop/sec: 143766
+[DEBUG] [WIFI] RSSI: 0 dBm, Channel: 11
+[DEBUG] [Utils] No configured motors
+[DEBUG] [Main] Temp: 52.90 °C
+[DEBUG] [WIFI] broadcast message: 
+[ 16515][E][WiFiUdp.cpp:185] endPacket(): could not send data: 118
+[DEBUG] [Main] Loop/sec: 144876
+[DEBUG] [WIFI] RSSI: 0 dBm, Channel: 14
+[DEBUG] [Utils] No configured motors
+[DEBUG] [Main] Temp: 54.90 °C
+[DEBUG] [WIFI] broadcast message: 
+[ 17515][E][WiFiUdp.cpp:185] endPacket(): could not send data: 118
+[ 17621][V][WiFiGeneric.cpp:363] _arduino_event_cb(): STA Disconnected: SSID: Sl1Er, BSSID: 00:00:00:00:00:00, Reason: 201
+[ 17632][D][WiFiGeneric.cpp:1040] _eventCallback(): Arduino Event: 5 - STA_DISCONNECTED
+[ 17640][W][WiFiGeneric.cpp:1062] _eventCallback(): Reason: 201 - NO_AP_FOUND
+[ 17647][D][WiFiGeneric.cpp:1086] _eventCallback(): WiFi AutoReconnect Running
+[ 17655][V][WiFiGeneric.cpp:97] set_esp_interface_ip(): Configuring Station static IP: 0.0.0.0, MASK: 0.0.0.0, GW: 0.0.0.0
+[DEBUG] [Main] Loop/sec: 136902
+[DEBUG] [WIFI] RSSI: 0 dBm, Channel: 8
+[DEBUG] [Utils] No configured motors
+[DEBUG] [Main] Temp: 52.90 °C
+[DEBUG] [WIFI] broadcast message: 
+[ 18516][E][WiFiUdp.cpp:185] endPacket(): could not send data: 118
+[DEBUG] [Main] Loop/sec: 144617
+[DEBUG] [WIFI] RSSI: 0 dBm, Channel: 13
+[DEBUG] [Utils] No configured motors
+[DEBUG] [Main] Temp: 52.90 °C
+[DEBUG] [WIFI] broadcast message: 
+[ 19516][E][WiFiUdp.cpp:185] endPacket(): could not send data: 118
+[ 20075][V][WiFiGeneric.cpp:363] _arduino_event_cb(): STA Disconnected: SSID: Sl1Er, BSSID: 00:00:00:00:00:00, Reason: 201
+[ 20086][D][WiFiGeneric.cpp:1040] _eventCallback(): Arduino Event: 5 - STA_DISCONNECTED
+[ 20094][W][WiFiGeneric.cpp:1062] _eventCallback(): Reason: 201 - NO_AP_FOUND
+[ 20101][D][WiFiGeneric.cpp:1086] _eventCallback(): WiFi AutoReconnect Running
+[ 20108][V][WiFiGeneric.cpp:97] set_esp_interface_ip(): Configuring Station static IP: 0.0.0.0, MASK: 0.0.0.0, GW: 0.0.0.0
+[DEBUG] [Main] Loop/sec: 137080
+[DEBUG] [WIFI] RSSI: 0 dBm, Channel: 4
+[DEBUG] [Utils] No configured motors
+[DEBUG] [Main] Temp: 54.90 °C
+[DEBUG] [WIFI] broadcast message: 
+[ 20517][E][WiFiUdp.cpp:185] endPacket(): could not send data: 118
+[DEBUG] [Main] Loop/sec: 144295
+[DEBUG] [WIFI] RSSI: 0 dBm, Channel: 12
+[DEBUG] [Utils] No configured motors
+[DEBUG] [Main] Temp: 53.90 °C
+[DEBUG] [WIFI] broadcast message: 
+[ 21517][E][WiFiUdp.cpp:185] endPacket(): could not send data: 118
+[DEBUG] [Main] Loop/sec: 144478
+[DEBUG] [WIFI] RSSI: 0 dBm, Channel: 14
+[DEBUG] [Utils] No configured motors
+[DEBUG] [Main] Temp: 52.90 °C
+[DEBUG] [WIFI] broadcast message: 
+[ 22518][E][WiFiUdp.cpp:185] endPacket(): could not send data: 118
+[ 22528][V][WiFiGeneric.cpp:363] _arduino_event_cb(): STA Disconnected: SSID: Sl1Er, BSSID: 00:00:00:00:00:00, Reason: 201
+[ 22539][D][WiFiGeneric.cpp:1040] _eventCallback(): Arduino Event: 5 - STA_DISCONNECTED
+[ 22547][W][WiFiGeneric.cpp:1062] _eventCallback(): Reason: 201 - NO_AP_FOUND
+[ 22554][D][WiFiGeneric.cpp:1086] _eventCallback(): WiFi AutoReconnect Running
+[ 22562][V][WiFiGeneric.cpp:97] set_esp_interface_ip(): Configuring Station static IP: 0.0.0.0, MASK: 0.0.0.0, GW: 0.0.0.0
+[DEBUG] [Main] Loop/sec: 137207
+[DEBUG] [WIFI] RSSI: 0 dBm, Channel: 8
+[DEBUG] [Utils] No configured motors
+[DEBUG] [Main] Temp: 54.90 °C
+[DEBUG] [WIFI] broadcast message: 
+[ 23518][E][WiFiUdp.cpp:185] endPacket(): could not send data: 118
+[DEBUG] [Main] Loop/sec: 144199
+[DEBUG] [WIFI] RSSI: 0 dBm, Channel: 13
+[DEBUG] [Utils] No configured motors
+[DEBUG] [Main] Temp: 53.90 °C
+[DEBUG] [WIFI] broadcast message: 
+[ 24519][E][WiFiUdp.cpp:185] endPacket(): could not send data: 118
+[ 24982][V][WiFiGeneric.cpp:363] _arduino_event_cb(): STA Disconnected: SSID: Sl1Er, BSSID: 00:00:00:00:00:00, Reason: 201
+[ 24993][D][WiFiGeneric.cpp:1040] _eventCallback(): Arduino Event: 5 - STA_DISCONNECTED
+[ 25001][W][WiFiGeneric.cpp:1062] _eventCallback(): Reason: 201 - NO_AP_FOUND
+[ 25008][D][WiFiGeneric.cpp:1086] _eventCallback(): WiFi AutoReconnect Running
+[ 25016][V][WiFiGeneric.cpp:97] set_esp_interface_ip(): Configuring Station static IP: 0.0.0.0, MASK: 0.0.0.0, GW: 0.0.0.0
+[DEBUG] [Main] Loop/sec: 137452
+[DEBUG] [WIFI] RSSI: 0 dBm, Channel: 5
+[DEBUG] [Utils] No configured motors
+[DEBUG] [Main] Temp: 55.90 °C
+[DEBUG] [WIFI] broadcast message: 
+[ 25519][E][WiFiUdp.cpp:185] endPacket(): could not send data: 118
+[DEBUG] [Main] Loop/sec: 143926
+[DEBUG] [WIFI] RSSI: 0 dBm, Channel: 12
+[DEBUG] [Utils] No configured motors
+[DEBUG] [Main] Temp: 55.90 °C
+[DEBUG] [WIFI] broadcast message: 
+[ 26520][E][WiFiUdp.cpp:185] endPacket(): could not send data: 118
+[ 27435][V][WiFiGeneric.cpp:363] _arduino_event_cb(): STA Disconnected: SSID: Sl1Er, BSSID: 00:00:00:00:00:00, Reason: 201
+[ 27447][D][WiFiGeneric.cpp:1040] _eventCallback(): Arduino Event: 5 - STA_DISCONNECTED
+[ 27454][W][WiFiGeneric.cpp:1062] _eventCallback(): Reason: 201 - NO_AP_FOUND
+[ 27461][D][WiFiGeneric.cpp:1086] _eventCallback(): WiFi AutoReconnect Running
+[ 27469][V][WiFiGeneric.cpp:97] set_esp_interface_ip(): Configuring Station static IP: 0.0.0.0, MASK: 0.0.0.0, GW: 0.0.0.0
+[DEBUG] [Main] Loop/sec: 137957
+[DEBUG] [WIFI] RSSI: 0 dBm, Channel: 1
+[DEBUG] [Utils] No configured motors
+[DEBUG] [Main] Temp: 54.90 °C
+[DEBUG] [WIFI] broadcast message: 
+[ 27520][E][WiFiUdp.cpp:185] endPacket(): could not send data: 118
+[DEBUG] [Main] Loop/sec: 143603
+[DEBUG] [WIFI] RSSI: 0 dBm, Channel: 9
+[DEBUG] [Utils] No configured motors
+[DEBUG] [Main] Temp: 54.90 °C
+[DEBUG] [WIFI] broadcast message: 
+[ 28521][E][WiFiUdp.cpp:185] endPacket(): could not send data: 118
+[DEBUG] [Main] Loop/sec: 144738
+[DEBUG] [WIFI] RSSI: 0 dBm, Channel: 13
+[DEBUG] [Utils] No configured motors
+[DEBUG] [Main] Temp: 54.90 °C
+[DEBUG] [WIFI] broadcast message: 
+[ 29521][E][WiFiUdp.cpp:185] endPacket(): could not send data: 118
+[ 29889][V][WiFiGeneric.cpp:363] _arduino_event_cb(): STA Disconnected: SSID: Sl1Er, BSSID: 00:00:00:00:00:00, Reason: 201
+[ 29900][D][WiFiGeneric.cpp:1040] _eventCallback(): Arduino Event: 5 - STA_DISCONNECTED
+[ 29908][W][WiFiGeneric.cpp:1062] _eventCallback(): Reason: 201 - NO_AP_FOUND
+[ 29915][D][WiFiGeneric.cpp:1086] _eventCallback(): WiFi AutoReconnect Running
+[ 29923][V][WiFiGeneric.cpp:97] set_esp_interface_ip(): Configuring Station static IP: 0.0.0.0, MASK: 0.0.0.0, GW: 0.0.0.0
+[DEBUG] [Main] Loop/sec: 136980
+[DEBUG] [WIFI] RSSI: 0 dBm, Channel: 5
+[DEBUG] [Utils] No configured motors
+[DEBUG] [Main] Temp: 56.90 °C
+[DEBUG] [WIFI] broadcast message: 
+[ 30522][E][WiFiUdp.cpp:185] endPacket(): could not send data: 118
+[DEBUG] [Main] Loop/sec: 144392
+[DEBUG] [WIFI] RSSI: 0 dBm, Channel: 12
+[DEBUG] [Utils] No configured motors
+[DEBUG] [Main] Temp: 55.90 °C
+[DEBUG] [WIFI] broadcast message: 
+[ 31522][E][WiFiUdp.cpp:185] endPacket(): could not send data: 118
+[ 32342][V][WiFiGeneric.cpp:363] _arduino_event_cb(): STA Disconnected: SSID: Sl1Er, BSSID: 00:00:00:00:00:00, Reason: 201
+[ 32354][D][WiFiGeneric.cpp:1040] _eventCallback(): Arduino Event: 5 - STA_DISCONNECTED
+[ 32361][W][WiFiGeneric.cpp:1062] _eventCallback(): Reason: 201 - NO_AP_FOUND
+[ 32368][D][WiFiGeneric.cpp:1086] _eventCallback(): WiFi AutoReconnect Running
+[ 32376][V][WiFiGeneric.cpp:97] set_esp_interface_ip(): Configuring Station static IP: 0.0.0.0, MASK: 0.0.0.0, GW: 0.0.0.0
+[DEBUG] [Main] Loop/sec: 137396
+[DEBUG] [WIFI] RSSI: 0 dBm, Channel: 2
+[DEBUG] [Utils] No configured motors
+[DEBUG] [Main] Temp: 56.90 °C
+[DEBUG] [WIFI] broadcast message: 
+[ 32523][E][WiFiUdp.cpp:185] endPacket(): could not send data: 118
+[DEBUG] [Main] Loop/sec: 144073
+[DEBUG] [WIFI] RSSI: 0 dBm, Channel: 10
+[DEBUG] [Utils] No configured motors
+[DEBUG] [Main] Temp: 55.90 °C
+[DEBUG] [WIFI] broadcast message: 
+[ 33523][E][WiFiUdp.cpp:185] endPacket(): could not send data: 118
+[DEBUG] [Main] Loop/sec: 144321
+[DEBUG] [WIFI] RSSI: 0 dBm, Channel: 14
+[DEBUG] [Utils] No configured motors
+[DEBUG] [Main] Temp: 55.90 °C
+[DEBUG] [WIFI] broadcast message: 
+[ 34524][E][WiFiUdp.cpp:185] endPacket(): could not send data: 118
+[ 34796][V][WiFiGeneric.cpp:363] _arduino_event_cb(): STA Disconnected: SSID: Sl1Er, BSSID: 00:00:00:00:00:00, Reason: 201
+[ 34807][D][WiFiGeneric.cpp:1040] _eventCallback(): Arduino Event: 5 - STA_DISCONNECTED
+[ 34815][W][WiFiGeneric.cpp:1062] _eventCallback(): Reason: 201 - NO_AP_FOUND
+[ 34822][D][WiFiGeneric.cpp:1086] _eventCallback(): WiFi AutoReconnect Running
+[ 34830][V][WiFiGeneric.cpp:97] set_esp_interface_ip(): Configuring Station static IP: 0.0.0.0, MASK: 0.0.0.0, GW: 0.0.0.0
+[DEBUG] [Main] Loop/sec: 137291
+[DEBUG] [WIFI] RSSI: 0 dBm, Channel: 6
+[DEBUG] [Utils] No configured motors
+[DEBUG] [Main] Temp: 55.90 °C
+[DEBUG] [WIFI] broadcast message: 
+[ 35524][E][WiFiUdp.cpp:185] endPacket(): could not send data: 118
+[DEBUG] [Main] Loop/sec: 144036
+[DEBUG] [WIFI] RSSI: 0 dBm, Channel: 12
+[DEBUG] [Utils] No configured motors
+[DEBUG] [Main] Temp: 55.90 °C
+[DEBUG] [WIFI] broadcast message: 
+[ 36525][E][WiFiUdp.cpp:185] endPacket(): could not send data: 118
+[ 37250][V][WiFiGeneric.cpp:363] _arduino_event_cb(): STA Disconnected: SSID: Sl1Er, BSSID: 00:00:00:00:00:00, Reason: 201
+[ 37261][D][WiFiGeneric.cpp:1040] _eventCallback(): Arduino Event: 5 - STA_DISCONNECTED
+[ 37269][W][WiFiGeneric.cpp:1062] _eventCallback(): Reason: 201 - NO_AP_FOUND
+[ 37276][D][WiFiGeneric.cpp:1086] _eventCallback(): WiFi AutoReconnect Running
+[ 37284][V][WiFiGeneric.cpp:97] set_esp_interface_ip(): Configuring Station static IP: 0.0.0.0, MASK: 0.0.0.0, GW: 0.0.0.0
+[DEBUG] [Main] Loop/sec: 137887
+[DEBUG] [WIFI] RSSI: 0 dBm, Channel: 2
+[DEBUG] [Utils] No configured motors
+[DEBUG] [Main] Temp: 57.90 °C
+[DEBUG] [WIFI] broadcast message: 
+[ 37525][E][WiFiUdp.cpp:185] endPacket(): could not send data: 118
+[DEBUG] [Main] Loop/sec: 143543
+[DEBUG] [WIFI] RSSI: 0 dBm, Channel: 11
+[DEBUG] [Utils] No configured motors
+[DEBUG] [Main] Temp: 58.90 °C
+[DEBUG] [WIFI] broadcast message: 
+[ 38526][E][WiFiUdp.cpp:185] endPacket(): could not send data: 118
+[DEBUG] [Main] Loop/sec: 144885
+[DEBUG] [WIFI] RSSI: 0 dBm, Channel: 14
+[DEBUG] [Utils] No configured motors
+[DEBUG] [Main] Temp: 57.90 °C
+[DEBUG] [WIFI] broadcast message: 
+[ 39526][E][WiFiUdp.cpp:185] endPacket(): could not send data: 118
+[ 39703][V][WiFiGeneric.cpp:363] _arduino_event_cb(): STA Disconnected: SSID: Sl1Er, BSSID: 00:00:00:00:00:00, Reason: 201
+[ 39715][D][WiFiGeneric.cpp:1040] _eventCallback(): Arduino Event: 5 - STA_DISCONNECTED
+[ 39722][W][WiFiGeneric.cpp:1062] _eventCallback(): Reason: 201 - NO_AP_FOUND
+[ 39729][D][WiFiGeneric.cpp:1086] _eventCallback(): WiFi AutoReconnect Running
+[ 39737][V][WiFiGeneric.cpp:97] set_esp_interface_ip(): Configuring Station static IP: 0.0.0.0, MASK: 0.0.0.0, GW: 0.0.0.0
+[DEBUG] [Main] Loop/sec: 136845
+[DEBUG] [WIFI] RSSI: 0 dBm, Channel: 7
+[DEBUG] [Utils] No configured motors
+[DEBUG] [Main] Temp: 58.90 °C
+[DEBUG] [WIFI] broadcast message: 
+[ 40527][E][WiFiUdp.cpp:185] endPacket(): could not send data: 118
+-> set wifi_ssid SlimeServer
+[DEBUG] [Serial] New input: 
+[DEBUG] [Config] Configuration saved.
+{
+  "wifi_ssid": "SlimeServer",
+  "wifi_password": "95815480",
+  "transmit_power": 2,
+  "mdns_name": "new name",
+  "node_map": "c1ff2f06540001003f002f0654000100e0ff4e067300010020004e0673000100dfff010674000100210001067400010000002f06b7ff010000002f060f000100",
+  "i2c_scl": 8,
+  "i2c_sda": 16,
+  "i2c_speed": 400000,
+  "motor_map_i2c_num": 0,
+  "motor_map_i2c": [
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0
+  ],
+  "motor_map_ledc_num": 0,
+  "motor_map_ledc": [
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0
+  ],
+  "bump_time_us": 10000,
+  "bump_start_threshold": 20000,
+  "radio_keepalive_level": 2,
+  "config_version": 1
+}
+wifi_ssid set to SlimeServer
+[DEBUG] [Main] Loop/sec: 139662
+[DEBUG] [WIFI] RSSI: 0 dBm, Channel: 13
+[DEBUG] [Utils] No configured motors
+[DEBUG] [Main] Temp: 59.90 °C
+[DEBUG] [WIFI] broadcast message: 
+[ 41527][E][WiFiUdp.cpp:185] endPacket(): could not send data: 118
+[ 42157][V][WiFiGeneric.cpp:363] _arduino_event_cb(): STA Disconnected: SSID: Sl1Er, BSSID: 00:00:00:00:00:00, Reason: 201
+[ 42168][D][WiFiGeneric.cpp:1040] _eventCallback(): Arduino Event: 5 - STA_DISCONNECTED
+[ 42176][W][WiFiGeneric.cpp:1062] _eventCallback(): Reason: 201 - NO_AP_FOUND
+[ 42183][D][WiFiGeneric.cpp:1086] _eventCallback(): WiFi AutoReconnect Running
+[ 42191][V][WiFiGeneric.cpp:97] set_esp_interface_ip(): Configuring Station static IP: 0.0.0.0, MASK: 0.0.0.0, GW: 0.0.0.0
+[DEBUG] [Main] Loop/sec: 137241
+[DEBUG] [WIFI] RSSI: 0 dBm, Channel: 3
+[DEBUG] [Utils] No configured motors
+[DEBUG] [Main] Temp: 58.90 °C
+[DEBUG] [WIFI] broadcast message: 
+[ 42528][E][WiFiUdp.cpp:185] endPacket(): could not send data: 118
+[DEBUG] [Main] Loop/sec: 144221
+[DEBUG] [WIFI] RSSI: 0 dBm, Channel: 11
+[DEBUG] [Utils] No configured motors
+[DEBUG] [Main] Temp: 57.90 °C
+[DEBUG] [WIFI] broadcast message: 
+[ 43528][E][WiFiUdp.cpp:185] endPacket(): could not send data: 118
+[DEBUG] [Main] Loop/sec: 144546
+[DEBUG] [WIFI] RSSI: 0 dBm, Channel: 14
+[DEBUG] [Utils] No configured motors
+[DEBUG] [Main] Temp: 57.90 °C
+[DEBUG] [WIFI] broadcast message: 
+[ 44529][E][WiFiUdp.cpp:185] endPacket(): could not send data: 118
+[ 44611][V][WiFiGeneric.cpp:363] _arduino_event_cb(): STA Disconnected: SSID: Sl1Er, BSSID: 00:00:00:00:00:00, Reason: 201
+[ 44622][D][WiFiGeneric.cpp:1040] _eventCallback(): Arduino Event: 5 - STA_DISCONNECTED
+[ 44630][W][WiFiGeneric.cpp:1062] _eventCallback(): Reason: 201 - NO_AP_FOUND
+[ 44637][D][WiFiGeneric.cpp:1086] _eventCallback(): WiFi AutoReconnect Running
+[ 44644][V][WiFiGeneric.cpp:97] set_esp_interface_ip(): Configuring Station static IP: 0.0.0.0, MASK: 0.0.0.0, GW: 0.0.0.0
+[DEBUG] [Main] Loop/sec: 137218
+[DEBUG] [WIFI] RSSI: 0 dBm, Channel: 8
+[DEBUG] [Utils] No configured motors
+[DEBUG] [Main] Temp: 59.90 °C
+[DEBUG] [WIFI] broadcast message: 
+[ 45529][E][WiFiUdp.cpp:185] endPacket(): could not send data: 118
+[DEBUG] [Main] Loop/sec: 144208
+[DEBUG] [WIFI] RSSI: 0 dBm, Channel: 13
+[DEBUG] [Utils] No configured motors
+[DEBUG] [Main] Temp: 60.90 °C
+[DEBUG] [WIFI] broadcast message: 
+[ 46530][E][WiFiUdp.cpp:185] endPacket(): could not send data: 118
+[ 47064][V][WiFiGeneric.cpp:363] _arduino_event_cb(): STA Disconnected: SSID: Sl1Er, BSSID: 00:00:00:00:00:00, Reason: 201
+[ 47075][D][WiFiGeneric.cpp:1040] _eventCallback(): Arduino Event: 5 - STA_DISCONNECTED
+[ 47083][W][WiFiGeneric.cpp:1062] _eventCallback(): Reason: 201 - NO_AP_FOUND
+[ 47090][D][WiFiGeneric.cpp:1086] _eventCallback(): WiFi AutoReconnect Running
+[ 47098][V][WiFiGeneric.cpp:97] set_esp_interface_ip(): Configuring Station static IP: 0.0.0.0, MASK: 0.0.0.0, GW: 0.0.0.0
+[DEBUG] [Main] Loop/sec: 137543
+[DEBUG] [WIFI] RSSI: 0 dBm, Channel: 4
+[DEBUG] [Utils] No configured motors
+[DEBUG] [Main] Temp: 58.90 °C
+[DEBUG] [WIFI] broadcast message: 
+[ 47530][E][WiFiUdp.cpp:185] endPacket(): could not send data: 118
+[DEBUG] [Main] Loop/sec: 143836
+[DEBUG] [WIFI] RSSI: 0 dBm, Channel: 12
+[DEBUG] [Utils] No configured motors
+[DEBUG] [Main] Temp: 60.90 °C
+[DEBUG] [WIFI] broadcast message: 
+[ 48531][E][WiFiUdp.cpp:185] endPacket(): could not send data: 118
+[ 49518][V][WiFiGeneric.cpp:363] _arduino_event_cb(): STA Disconnected: SSID: Sl1Er, BSSID: 00:00:00:00:00:00, Reason: 201
+[ 49529][D][WiFiGeneric.cpp:1040] _eventCallback(): Arduino Event: 5 - STA_DISCONNECTED
+[ 49537][W][WiFiGeneric.cpp:1062] _eventCallback(): Reason: 201 - NO_AP_FOUND
+[ 49544][D][WiFiGeneric.cpp:1086] _eventCallback(): WiFi AutoReconnect Running
+[ 49552][V][WiFiGeneric.cpp:97] set_esp_interface_ip(): Configuring Station static IP: 0.0.0.0, MASK: 0.0.0.0, GW: 0.0.0.0
+[DEBUG] [Main] Loop/sec: 143150
+[DEBUG] [WIFI] RSSI: 0 dBm, Channel: 1
+[DEBUG] [Utils] No configured motors
+[DEBUG] [Main] Temp: 61.90 °C
+[DEBUG] [WIFI] broadcast message: 
+[ 49566][E][WiFiUdp.cpp:185] endPacket(): could not send data: 118
+[DEBUG] [Main] Loop/sec: 143537
+[DEBUG] [WIFI] RSSI: 0 dBm, Channel: 9
+[DEBUG] [Utils] No configured motors
+[DEBUG] [Main] Temp: 61.90 °C
+[DEBUG] [WIFI] broadcast message: 
+[ 50566][E][WiFiUdp.cpp:185] endPacket(): could not send data: 118
+[DEBUG] [Main] Loop/sec: 144712
+[DEBUG] [WIFI] RSSI: 0 dBm, Channel: 13
+[DEBUG] [Utils] No configured motors
+[DEBUG] [Main] Temp: 59.90 °C
+[DEBUG] [WIFI] broadcast message: 
+[ 51566][E][WiFiUdp.cpp:185] endPacket(): could not send data: 118
+[ 51971][V][WiFiGeneric.cpp:363] _arduino_event_cb(): STA Disconnected: SSID: Sl1Er, BSSID: 00:00:00:00:00:00, Reason: 201
+[ 51982][D][WiFiGeneric.cpp:1040] _eventCallback(): Arduino Event: 5 - STA_DISCONNECTED
+[ 51990][W][WiFiGeneric.cpp:1062] _eventCallback(): Reason: 201 - NO_AP_FOUND
+[ 51997][D][WiFiGeneric.cpp:1086] _eventCallback(): WiFi AutoReconnect Running
+[ 52005][V][WiFiGeneric.cpp:97] set_esp_interface_ip(): Configuring Station static IP: 0.0.0.0, MASK: 0.0.0.0, GW: 0.0.0.0
+[DEBUG] [Main] Loop/sec: 136848
+[DEBUG] [WIFI] RSSI: 0 dBm, Channel: 5
+[DEBUG] [Utils] No configured motors
+[DEBUG] [Main] Temp: 61.90 °C
+[DEBUG] [WIFI] broadcast message: 
+[ 52566][E][WiFiUdp.cpp:185] endPacket(): could not send data: 118
+[DEBUG] [Main] Loop/sec: 144395
+[DEBUG] [WIFI] RSSI: 0 dBm, Channel: 12
+[DEBUG] [Utils] No configured motors
+[DEBUG] [Main] Temp: 59.90 °C
+[DEBUG] [WIFI] broadcast message: 
+[ 53566][E][WiFiUdp.cpp:185] endPacket(): could not send data: 118
+[ 54425][V][WiFiGeneric.cpp:363] _arduino_event_cb(): STA Disconnected: SSID: Sl1Er, BSSID: 00:00:00:00:00:00, Reason: 201
+[ 54436][D][WiFiGeneric.cpp:1040] _eventCallback(): Arduino Event: 5 - STA_DISCONNECTED
+[ 54444][W][WiFiGeneric.cpp:1062] _eventCallback(): Reason: 201 - NO_AP_FOUND
+[ 54451][D][WiFiGeneric.cpp:1086] _eventCallback(): WiFi AutoReconnect Running
+[ 54459][V][WiFiGeneric.cpp:97] set_esp_interface_ip(): Configuring Station static IP: 0.0.0.0, MASK: 0.0.0.0, GW: 0.0.0.0
+[DEBUG] [Main] Loop/sec: 137372
+[DEBUG] [WIFI] RSSI: 0 dBm, Channel: 1
+[DEBUG] [Utils] No configured motors
+[DEBUG] [Main] Temp: 59.90 °C
+[DEBUG] [WIFI] broadcast message: 
+[ 54566][E][WiFiUdp.cpp:185] endPacket(): could not send data: 118
+[DEBUG] [Main] Loop/sec: 143978
+[DEBUG] [WIFI] RSSI: 0 dBm, Channel: 10
+[DEBUG] [Utils] No configured motors
+[DEBUG] [Main] Temp: 62.90 °C
+[DEBUG] [WIFI] broadcast message: 
+[ 55566][E][WiFiUdp.cpp:185] endPacket(): could not send data: 118
+[DEBUG] [Main] Loop/sec: 144192
+[DEBUG] [WIFI] RSSI: 0 dBm, Channel: 14
+[DEBUG] [Utils] No configured motors
+[DEBUG] [Main] Temp: 60.90 °C
+[DEBUG] [WIFI] broadcast message: 
+[ 56566][E][WiFiUdp.cpp:185] endPacket(): could not send data: 118
+[ 56879][V][WiFiGeneric.cpp:363] _arduino_event_cb(): STA Disconnected: SSID: Sl1Er, BSSID: 00:00:00:00:00:00, Reason: 201
+[ 56890][D][WiFiGeneric.cpp:1040] _eventCallback(): Arduino Event: 5 - STA_DISCONNECTED
+[ 56898][W][WiFiGeneric.cpp:1062] _eventCallback(): Reason: 201 - NO_AP_FOUND
+[ 56905][D][WiFiGeneric.cpp:1086] _eventCallback(): WiFi AutoReconnect Running
+[ 56912][V][WiFiGeneric.cpp:97] set_esp_interface_ip(): Configuring Station static IP: 0.0.0.0, MASK: 0.0.0.0, GW: 0.0.0.0
+[DEBUG] [Main] Loop/sec: 137390
+[DEBUG] [WIFI] RSSI: 0 dBm, Channel: 6
+[DEBUG] [Utils] No configured motors
+[DEBUG] [Main] Temp: 60.90 °C
+[DEBUG] [WIFI] broadcast message: 
+[ 57566][E][WiFiUdp.cpp:185] endPacket(): could not send data: 118
+[DEBUG] [Main] Loop/sec: 143899
+[DEBUG] [WIFI] RSSI: 0 dBm, Channel: 12
+[DEBUG] [Utils] No configured motors
+[DEBUG] [Main] Temp: 62.90 °C
+[DEBUG] [WIFI] broadcast message: 
+[ 58566][E][WiFiUdp.cpp:185] endPacket(): could not send data: 118
+[ 59332][V][WiFiGeneric.cpp:363] _arduino_event_cb(): STA Disconnected: SSID: Sl1Er, BSSID: 00:00:00:00:00:00, Reason: 201
+[ 59343][D][WiFiGeneric.cpp:1040] _eventCallback(): Arduino Event: 5 - STA_DISCONNECTED
+[ 59351][W][WiFiGeneric.cpp:1062] _eventCallback(): Reason: 201 - NO_AP_FOUND
+[ 59358][D][WiFiGeneric.cpp:1086] _eventCallback(): WiFi AutoReconnect Running
+[ 59366][V][WiFiGeneric.cpp:97] set_esp_interface_ip(): Configuring Station static IP: 0.0.0.0, MASK: 0.0.0.0, GW: 0.0.0.0
+[DEBUG] [Main] Loop/sec: 137778
+[DEBUG] [WIFI] RSSI: 0 dBm, Channel: 2
+[DEBUG] [Utils] No configured motors
+[DEBUG] [Main] Temp: 61.90 °C
+[DEBUG] [WIFI] broadcast message: 
+[ 59566][E][WiFiUdp.cpp:185] endPacket(): could not send data: 118
+[DEBUG] [Main] Loop/sec: 143556
+[DEBUG] [WIFI] RSSI: 0 dBm, Channel: 10
+[DEBUG] [Utils] No configured motors
+[DEBUG] [Main] Temp: 62.90 °C
+[DEBUG] [WIFI] broadcast message: 
+[ 60566][E][WiFiUdp.cpp:185] endPacket(): could not send data: 118
+[DEBUG] [Main] Loop/sec: 144762
+[DEBUG] [WIFI] RSSI: 0 dBm, Channel: 14
+[DEBUG] [Utils] No configured motors
+[DEBUG] [Main] Temp: 61.90 °C
+[DEBUG] [WIFI] broadcast message: 
+[ 61566][E][WiFiUdp.cpp:185] endPacket(): could not send data: 118
+[ 61786][V][WiFiGeneric.cpp:363] _arduino_event_cb(): STA Disconnected: SSID: Sl1Er, BSSID: 00:00:00:00:00:00, Reason: 201
+[ 61797][D][WiFiGeneric.cpp:1040] _eventCallback(): Arduino Event: 5 - STA_DISCONNECTED
+[ 61805][W][WiFiGeneric.cpp:1062] _eventCallback(): Reason: 201 - NO_AP_FOUND
+[ 61812][D][WiFiGeneric.cpp:1086] _eventCallback(): WiFi AutoReconnect Running
+[ 61820][V][WiFiGeneric.cpp:97] set_esp_interface_ip(): Configuring Station static IP: 0.0.0.0, MASK: 0.0.0.0, GW: 0.0.0.0
+[DEBUG] [Main] Loop/sec: 136730
+[DEBUG] [WIFI] RSSI: 0 dBm, Channel: 7
+[DEBUG] [Utils] No configured motors
+[DEBUG] [Main] Temp: 62.90 °C
+[DEBUG] [WIFI] broadcast message: 
+[ 62566][E][WiFiUdp.cpp:185] endPacket(): could not send data: 118
+[DEBUG] [Main] Loop/sec: 144521
+[DEBUG] [WIFI] RSSI: 0 dBm, Channel: 13
+[DEBUG] [Utils] No configured motors
+[DEBUG] [Main] Temp: 61.90 °C
+[DEBUG] [WIFI] broadcast message: 
+[ 63566][E][WiFiUdp.cpp:185] endPacket(): could not send data: 118
+[ 64239][V][WiFiGeneric.cpp:363] _arduino_event_cb(): STA Disconnected: SSID: Sl1Er, BSSID: 00:00:00:00:00:00, Reason: 201
+[ 64250][D][WiFiGeneric.cpp:1040] _eventCallback(): Arduino Event: 5 - STA_DISCONNECTED
+[ 64258][W][WiFiGeneric.cpp:1062] _eventCallback(): Reason: 201 - NO_AP_FOUND
+[ 64265][D][WiFiGeneric.cpp:1086] _eventCallback(): WiFi AutoReconnect Running
+[ 64273][V][WiFiGeneric.cpp:97] set_esp_interface_ip(): Configuring Station static IP: 0.0.0.0, MASK: 0.0.0.0, GW: 0.0.0.0
+[DEBUG] [Main] Loop/sec: 137080
+[DEBUG] [WIFI] RSSI: 0 dBm, Channel: 3
+[DEBUG] [Utils] No configured motors
+[DEBUG] [Main] Temp: 61.90 °C
+[DEBUG] [WIFI] broadcast message: 
+[ 64566][E][WiFiUdp.cpp:185] endPacket(): could not send data: 118
+[DEBUG] [Main] Loop/sec: 144212
+[DEBUG] [WIFI] RSSI: 0 dBm, Channel: 11
+[DEBUG] [Utils] No configured motors
+[DEBUG] [Main] Temp: 63.90 °C
+[DEBUG] [WIFI] broadcast message: 
+[ 65566][E][WiFiUdp.cpp:185] endPacket(): could not send data: 118
+[DEBUG] [Main] Loop/sec: 144309
+[DEBUG] [WIFI] RSSI: 0 dBm, Channel: 14
+[DEBUG] [Utils] No configured motors
+[DEBUG] [Main] Temp: 62.90 °C
+[DEBUG] [WIFI] broadcast message: 
+[ 66566][E][WiFiUdp.cpp:185] endPacket(): could not send data: 118
+[ 66693][V][WiFiGeneric.cpp:363] _arduino_event_cb(): STA Disconnected: SSID: Sl1Er, BSSID: 00:00:00:00:00:00, Reason: 201
+[ 66704][D][WiFiGeneric.cpp:1040] _eventCallback(): Arduino Event: 5 - STA_DISCONNECTED
+[ 66712][W][WiFiGeneric.cpp:1062] _eventCallback(): Reason: 201 - NO_AP_FOUND
+[ 66719][D][WiFiGeneric.cpp:1086] _eventCallback(): WiFi AutoReconnect Running
+[ 66727][V][WiFiGeneric.cpp:97] set_esp_interface_ip(): Configuring Station static IP: 0.0.0.0, MASK: 0.0.0.0, GW: 0.0.0.0
+[DEBUG] [Main] Loop/sec: 137314
+[DEBUG] [WIFI] RSSI: 0 dBm, Channel: 7
+[DEBUG] [Utils] No configured motors
+[DEBUG] [Main] Temp: 63.90 °C
+[DEBUG] [WIFI] broadcast message: 
+[ 67566][E][WiFiUdp.cpp:185] endPacket(): could not send data: 118
+[DEBUG] [Main] Loop/sec: 143937
+[DEBUG] [WIFI] RSSI: 0 dBm, Channel: 13
+[DEBUG] [Utils] No configured motors
+[DEBUG] [Main] Temp: 64.90 °C
+[DEBUG] [WIFI] broadcast message: 
+[ 68566][E][WiFiUdp.cpp:185] endPacket(): could not send data: 118
+[ 69146][V][WiFiGeneric.cpp:363] _arduino_event_cb(): STA Disconnected: SSID: Sl1Er, BSSID: 00:00:00:00:00:00, Reason: 201
+[ 69158][D][WiFiGeneric.cpp:1040] _eventCallback(): Arduino Event: 5 - STA_DISCONNECTED
+[ 69165][W][WiFiGeneric.cpp:1062] _eventCallback(): Reason: 201 - NO_AP_FOUND
+[ 69172][D][WiFiGeneric.cpp:1086] _eventCallback(): WiFi AutoReconnect Running
+[ 69180][V][WiFiGeneric.cpp:97] set_esp_interface_ip(): Configuring Station static IP: 0.0.0.0, MASK: 0.0.0.0, GW: 0.0.0.0
+[DEBUG] [Main] Loop/sec: 137608
+[DEBUG] [WIFI] RSSI: 0 dBm, Channel: 4
+[DEBUG] [Utils] No configured motors
+[DEBUG] [Main] Temp: 64.90 °C
+[DEBUG] [WIFI] broadcast message: 
+[ 69566][E][WiFiUdp.cpp:185] endPacket(): could not send data: 118
+[DEBUG] [Main] Loop/sec: 143698
+[DEBUG] [WIFI] RSSI: 0 dBm, Channel: 12
+[DEBUG] [Utils] No configured motors
+[DEBUG] [Main] Temp: 62.90 °C
+[DEBUG] [WIFI] broadcast message: 
+[ 70566][E][WiFiUdp.cpp:185] endPacket(): could not send data: 118
+[DEBUG] [Main] Loop/sec: 144941
+[DEBUG] [WIFI] RSSI: 0 dBm, Channel: 14
+[DEBUG] [Utils] No configured motors
+[DEBUG] [Main] Temp: 64.90 °C
+[DEBUG] [WIFI] broadcast message: 
+[ 71566][E][WiFiUdp.cpp:185] endPacket(): could not send data: 118
+[ 71600][V][WiFiGeneric.cpp:363] _arduino_event_cb(): STA Disconnected: SSID: Sl1Er, BSSID: 00:00:00:00:00:00, Reason: 201
+[ 71611][D][WiFiGeneric.cpp:1040] _eventCallback(): Arduino Event: 5 - STA_DISCONNECTED
+[ 71619][W][WiFiGeneric.cpp:1062] _eventCallback(): Reason: 201 - NO_AP_FOUND
+[ 71626][D][WiFiGeneric.cpp:1086] _eventCallback(): WiFi AutoReconnect Running
+[ 71634][V][WiFiGeneric.cpp:97] set_esp_interface_ip(): Configuring Station static IP: 0.0.0.0, MASK: 0.0.0.0, GW: 0.0.0.0
+[DEBUG] [Main] Loop/sec: 136604
+[DEBUG] [WIFI] RSSI: 0 dBm, Channel: 8
+[DEBUG] [Utils] No configured motors
+[DEBUG] [Main] Temp: 65.90 °C
+[DEBUG] [WIFI] broadcast message: 
+[ 72566][E][WiFiUdp.cpp:185] endPacket(): could not send data: 118
+[DEBUG] [Main] Loop/sec: 144636
+[DEBUG] [WIFI] RSSI: 0 dBm, Channel: 13
+[DEBUG] [Utils] No configured motors
+[DEBUG] [Main] Temp: 63.90 °C
+[DEBUG] [WIFI] broadcast message: 
+[ 73566][E][WiFiUdp.cpp:185] endPacket(): could not send data: 118
+[ 74054][V][WiFiGeneric.cpp:363] _arduino_event_cb(): STA Disconnected: SSID: Sl1Er, BSSID: 00:00:00:00:00:00, Reason: 201
+[ 74065][D][WiFiGeneric.cpp:1040] _eventCallback(): Arduino Event: 5 - STA_DISCONNECTED
+[ 74073][W][WiFiGeneric.cpp:1062] _eventCallback(): Reason: 201 - NO_AP_FOUND
+[ 74080][D][WiFiGeneric.cpp:1086] _eventCallback(): WiFi AutoReconnect Running
+[ 74087][V][WiFiGeneric.cpp:97] set_esp_interface_ip(): Configuring Station static IP: 0.0.0.0, MASK: 0.0.0.0, GW: 0.0.0.0
+[DEBUG] [Main] Loop/sec: 136984
+[DEBUG] [WIFI] RSSI: 0 dBm, Channel: 4
+[DEBUG] [Utils] No configured motors
+[DEBUG] [Main] Temp: 64.90 °C
+[DEBUG] [WIFI] broadcast message: 
+[ 74566][E][WiFiUdp.cpp:185] endPacket(): could not send data: 118
+[DEBUG] [Main] Loop/sec: 144264
+[DEBUG] [WIFI] RSSI: 0 dBm, Channel: 12
+[DEBUG] [Utils] No configured motors
+[DEBUG] [Main] Temp: 63.90 °C
+[DEBUG] [WIFI] broadcast message: 
+[ 75566][E][WiFiUdp.cpp:185] endPacket(): could not send data: 118
+[ 76507][V][WiFiGeneric.cpp:363] _arduino_event_cb(): STA Disconnected: SSID: Sl1Er, BSSID: 00:00:00:00:00:00, Reason: 201
+[ 76518][D][WiFiGeneric.cpp:1040] _eventCallback(): Arduino Event: 5 - STA_DISCONNECTED
+[ 76526][W][WiFiGeneric.cpp:1062] _eventCallback(): Reason: 201 - NO_AP_FOUND
+[ 76533][D][WiFiGeneric.cpp:1086] _eventCallback(): WiFi AutoReconnect Running
+[ 76541][V][WiFiGeneric.cpp:97] set_esp_interface_ip(): Configuring Station static IP: 0.0.0.0, MASK: 0.0.0.0, GW: 0.0.0.0
+[DEBUG] [Main] Loop/sec: 137371
+[DEBUG] [WIFI] RSSI: 0 dBm, Channel: 1
+[DEBUG] [Utils] No configured motors
+[DEBUG] [Main] Temp: 65.90 °C
+[DEBUG] [WIFI] broadcast message: 
+[ 76566][E][WiFiUdp.cpp:185] endPacket(): could not send data: 118
+[DEBUG] [Main] Loop/sec: 144074
+[DEBUG] [WIFI] RSSI: 0 dBm, Channel: 9
+[DEBUG] [Utils] No configured motors
+[DEBUG] [Main] Temp: 63.90 °C
+[DEBUG] [WIFI] broadcast message: 
+[ 77566][E][WiFiUdp.cpp:185] endPacket(): could not send data: 118
+[DEBUG] [Main] Loop/sec: 144150
+[DEBUG] [WIFI] RSSI: 0 dBm, Channel: 13
+[DEBUG] [Utils] No configured motors
+[DEBUG] [Main] Temp: 63.90 °C
+[DEBUG] [WIFI] broadcast message: 
+[ 78566][E][WiFiUdp.cpp:185] endPacket(): could not send data: 118
+[ 78961][V][WiFiGeneric.cpp:363] _arduino_event_cb(): STA Disconnected: SSID: Sl1Er, BSSID: 00:00:00:00:00:00, Reason: 201
+[ 78972][D][WiFiGeneric.cpp:1040] _eventCallback(): Arduino Event: 5 - STA_DISCONNECTED
+[ 78980][W][WiFiGeneric.cpp:1062] _eventCallback(): Reason: 201 - NO_AP_FOUND
+[ 78987][D][WiFiGeneric.cpp:1086] _eventCallback(): WiFi AutoReconnect Running
+[ 78995][V][WiFiGeneric.cpp:97] set_esp_interface_ip(): Configuring Station static IP: 0.0.0.0, MASK: 0.0.0.0, GW: 0.0.0.0
+[DEBUG] [Main] Loop/sec: 137430
+[DEBUG] [WIFI] RSSI: 0 dBm, Channel: 5
+[DEBUG] [Utils] No configured motors
+[DEBUG] [Main] Temp: 63.90 °C
+[DEBUG] [WIFI] broadcast message: 
+[ 79566][E][WiFiUdp.cpp:185] endPacket(): could not send data: 118
+[DEBUG] [Main] Loop/sec: 143804
+[DEBUG] [WIFI] RSSI: 0 dBm, Channel: 12
+[DEBUG] [Utils] No configured motors
+[DEBUG] [Main] Temp: 65.90 °C
+[DEBUG] [WIFI] broadcast message: 
+[ 80566][E][WiFiUdp.cpp:185] endPacket(): could not send data: 118
+[ 81414][V][WiFiGeneric.cpp:363] _arduino_event_cb(): STA Disconnected: SSID: Sl1Er, BSSID: 00:00:00:00:00:00, Reason: 201
+[ 81425][D][WiFiGeneric.cpp:1040] _eventCallback(): Arduino Event: 5 - STA_DISCONNECTED
+[ 81433][W][WiFiGeneric.cpp:1062] _eventCallback(): Reason: 201 - NO_AP_FOUND
+[ 81440][D][WiFiGeneric.cpp:1086] _eventCallback(): WiFi AutoReconnect Running
+[ 81448][V][WiFiGeneric.cpp:97] set_esp_interface_ip(): Configuring Station static IP: 0.0.0.0, MASK: 0.0.0.0, GW: 0.0.0.0
+[DEBUG] [Main] Loop/sec: 137968
+[DEBUG] [WIFI] RSSI: 0 dBm, Channel: 1
+[DEBUG] [Utils] No configured motors
+[DEBUG] [Main] Temp: 64.90 °C
+[DEBUG] [WIFI] broadcast message: 
+[ 81566][E][WiFiUdp.cpp:185] endPacket(): could not send data: 118
+[DEBUG] [Main] Loop/sec: 143421
+[DEBUG] [WIFI] RSSI: 0 dBm, Channel: 10
+[DEBUG] [Utils] No configured motors
+[DEBUG] [Main] Temp: 63.90 °C
+[DEBUG] [WIFI] broadcast message: 
+[ 82566][E][WiFiUdp.cpp:185] endPacket(): could not send data: 118
+[DEBUG] [Main] Loop/sec: 144772
+[DEBUG] [WIFI] RSSI: 0 dBm, Channel: 14
+[DEBUG] [Utils] No configured motors
+[DEBUG] [Main] Temp: 63.90 °C
+[DEBUG] [WIFI] broadcast message: 
+[ 83566][E][WiFiUdp.cpp:185] endPacket(): could not send data: 118
+[ 83868][V][WiFiGeneric.cpp:363] _arduino_event_cb(): STA Disconnected: SSID: Sl1Er, BSSID: 00:00:00:00:00:00, Reason: 201
+[ 83879][D][WiFiGeneric.cpp:1040] _eventCallback(): Arduino Event: 5 - STA_DISCONNECTED
+[ 83887][W][WiFiGeneric.cpp:1062] _eventCallback(): Reason: 201 - NO_AP_FOUND
+[ 83894][D][WiFiGeneric.cpp:1086] _eventCallback(): WiFi AutoReconnect Running
+[ 83902][V][WiFiGeneric.cpp:97] set_esp_interface_ip(): Configuring Station static IP: 0.0.0.0, MASK: 0.0.0.0, GW: 0.0.0.0
+[DEBUG] [Main] Loop/sec: 136804
+[DEBUG] [WIFI] RSSI: 0 dBm, Channel: 6
+[DEBUG] [Utils] No configured motors
+[DEBUG] [Main] Temp: 65.90 °C
+[DEBUG] [WIFI] broadcast message: 
+[ 84566][E][WiFiUdp.cpp:185] endPacket(): could not send data: 118
+[DEBUG] [Main] Loop/sec: 144494
+[DEBUG] [WIFI] RSSI: 0 dBm, Channel: 12
+[DEBUG] [Utils] No configured motors
+[DEBUG] [Main] Temp: 66.90 °C
+[DEBUG] [WIFI] broadcast message: 
+[ 85566][E][WiFiUdp.cpp:185] endPacket(): could not send data: 118
+[ 86322][V][WiFiGeneric.cpp:363] _arduino_event_cb(): STA Disconnected: SSID: Sl1Er, BSSID: 00:00:00:00:00:00, Reason: 201
+[ 86333][D][WiFiGeneric.cpp:1040] _eventCallback(): Arduino Event: 5 - STA_DISCONNECTED
+[ 86341][W][WiFiGeneric.cpp:1062] _eventCallback(): Reason: 201 - NO_AP_FOUND
+[ 86348][D][WiFiGeneric.cpp:1086] _eventCallback(): WiFi AutoReconnect Running
+[ 86355][V][WiFiGeneric.cpp:97] set_esp_interface_ip(): Configuring Station static IP: 0.0.0.0, MASK: 0.0.0.0, GW: 0.0.0.0
+[DEBUG] [Main] Loop/sec: 137222
+[DEBUG] [WIFI] RSSI: 0 dBm, Channel: 2
+[DEBUG] [Utils] No configured motors
+[DEBUG] [Main] Temp: 66.90 °C
+[DEBUG] [WIFI] broadcast message: 
+[ 86566][E][WiFiUdp.cpp:185] endPacket(): could not send data: 118
+[DEBUG] [Main] Loop/sec: 144151
+[DEBUG] [WIFI] RSSI: 0 dBm, Channel: 10
+[DEBUG] [Utils] No configured motors
+[DEBUG] [Main] Temp: 67.90 °C
+[DEBUG] [WIFI] broadcast message: 
+[ 87566][E][WiFiUdp.cpp:185] endPacket(): could not send data: 118
+[DEBUG] [Main] Loop/sec: 144197
+[DEBUG] [WIFI] RSSI: 0 dBm, Channel: 14
+[DEBUG] [Utils] No configured motors
+[DEBUG] [Main] Temp: 65.90 °C
+[DEBUG] [WIFI] broadcast message: 
+[ 88566][E][WiFiUdp.cpp:185] endPacket(): could not send data: 118
+[ 88775][V][WiFiGeneric.cpp:363] _arduino_event_cb(): STA Disconnected: SSID: Sl1Er, BSSID: 00:00:00:00:00:00, Reason: 201
+[ 88786][D][WiFiGeneric.cpp:1040] _eventCallback(): Arduino Event: 5 - STA_DISCONNECTED
+[ 88794][W][WiFiGeneric.cpp:1062] _eventCallback(): Reason: 201 - NO_AP_FOUND
+[ 88801][D][WiFiGeneric.cpp:1086] _eventCallback(): WiFi AutoReconnect Running
+[ 88809][V][WiFiGeneric.cpp:97] set_esp_interface_ip(): Configuring Station static IP: 0.0.0.0, MASK: 0.0.0.0, GW: 0.0.0.0
+[DEBUG] [Main] Loop/sec: 137316
+[DEBUG] [WIFI] RSSI: 0 dBm, Channel: 7
+[DEBUG] [Utils] No configured motors
+[DEBUG] [Main] Temp: 66.90 °C
+[DEBUG] [WIFI] broadcast message: 
+[ 89566][E][WiFiUdp.cpp:185] endPacket(): could not send data: 118
+[DEBUG] [Main] Loop/sec: 143940
+[DEBUG] [WIFI] RSSI: 0 dBm, Channel: 13
+[DEBUG] [Utils] No configured motors
+[DEBUG] [Main] Temp: 65.90 °C
+[DEBUG] [WIFI] broadcast message: 
+[ 90566][E][WiFiUdp.cpp:185] endPacket(): could not send data: 118
+[ 91229][V][WiFiGeneric.cpp:363] _arduino_event_cb(): STA Disconnected: SSID: Sl1Er, BSSID: 00:00:00:00:00:00, Reason: 201
+[ 91240][D][WiFiGeneric.cpp:1040] _eventCallback(): Arduino Event: 5 - STA_DISCONNECTED
+[ 91248][W][WiFiGeneric.cpp:1062] _eventCallback(): Reason: 201 - NO_AP_FOUND
+[ 91255][D][WiFiGeneric.cpp:1086] _eventCallback(): WiFi AutoReconnect Running
+[ 91263][V][WiFiGeneric.cpp:97] set_esp_interface_ip(): Configuring Station static IP: 0.0.0.0, MASK: 0.0.0.0, GW: 0.0.0.0
+[DEBUG] [Main] Loop/sec: 137686
+[DEBUG] [WIFI] RSSI: 0 dBm, Channel: 3
+[DEBUG] [Utils] No configured motors
+[DEBUG] [Main] Temp: 66.90 °C
+[DEBUG] [WIFI] broadcast message: 
+[ 91566][E][WiFiUdp.cpp:185] endPacket(): could not send data: 118
+[DEBUG] [Main] Loop/sec: 143787
+[DEBUG] [WIFI] RSSI: 0 dBm, Channel: 11
+[DEBUG] [Utils] No configured motors
+[DEBUG] [Main] Temp: 65.90 °C
+[DEBUG] [WIFI] broadcast message: 
+[ 92567][E][WiFiUdp.cpp:185] endPacket(): could not send data: 118
+[DEBUG] [Main] Loop/sec: 144899
+[DEBUG] [WIFI] RSSI: 0 dBm, Channel: 14
+[DEBUG] [Utils] No configured motors
+[DEBUG] [Main] Temp: 67.90 °C
+[DEBUG] [WIFI] broadcast message: 
+[ 93567][E][WiFiUdp.cpp:185] endPacket(): could not send data: 118
+[ 93682][V][WiFiGeneric.cpp:363] _arduino_event_cb(): STA Disconnected: SSID: Sl1Er, BSSID: 00:00:00:00:00:00, Reason: 201
+[ 93693][D][WiFiGeneric.cpp:1040] _eventCallback(): Arduino Event: 5 - STA_DISCONNECTED
+[ 93701][W][WiFiGeneric.cpp:1062] _eventCallback(): Reason: 201 - NO_AP_FOUND
+[ 93708][D][WiFiGeneric.cpp:1086] _eventCallback(): WiFi AutoReconnect Running
+[ 93716][V][WiFiGeneric.cpp:97] set_esp_interface_ip(): Configuring Station static IP: 0.0.0.0, MASK: 0.0.0.0, GW: 0.0.0.0
+[DEBUG] [Main] Loop/sec: 136848
+[DEBUG] [WIFI] RSSI: 0 dBm, Channel: 7
+[DEBUG] [Utils] No configured motors
+[DEBUG] [Main] Temp: 65.90 °C
+[DEBUG] [WIFI] broadcast message: 
+[ 94568][E][WiFiUdp.cpp:185] endPacket(): could not send data: 118
+[DEBUG] [Main] Loop/sec: 144678
+[DEBUG] [WIFI] RSSI: 0 dBm, Channel: 13
+[DEBUG] [Utils] No configured motors
+[DEBUG] [Main] Temp: 65.90 °C
+[DEBUG] [WIFI] broadcast message: 
+[ 95568][E][WiFiUdp.cpp:185] endPacket(): could not send data: 118
+[ 96136][V][WiFiGeneric.cpp:363] _arduino_event_cb(): STA Disconnected: SSID: Sl1Er, BSSID: 00:00:00:00:00:00, Reason: 201
+[ 96147][D][WiFiGeneric.cpp:1040] _eventCallback(): Arduino Event: 5 - STA_DISCONNECTED
+[ 96155][W][WiFiGeneric.cpp:1062] _eventCallback(): Reason: 201 - NO_AP_FOUND
+[ 96162][D][WiFiGeneric.cpp:1086] _eventCallback(): WiFi AutoReconnect Running
+[ 96170][V][WiFiGeneric.cpp:97] set_esp_interface_ip(): Configuring Station static IP: 0.0.0.0, MASK: 0.0.0.0, GW: 0.0.0.0
+[DEBUG] [Main] Loop/sec: 137081
+[DEBUG] [WIFI] RSSI: 0 dBm, Channel: 4
+[DEBUG] [Utils] No configured motors
+[DEBUG] [Main] Temp: 67.90 °C
+[DEBUG] [WIFI] broadcast message: 
+[ 96569][E][WiFiUdp.cpp:185] endPacket(): could not send data: 118
+[DEBUG] [Main] Loop/sec: 144278
+[DEBUG] [WIFI] RSSI: 0 dBm, Channel: 12
+[DEBUG] [Utils] No configured motors
+[DEBUG] [Main] Temp: 66.90 °C
+[DEBUG] [WIFI] broadcast message: 
+[ 97569][E][WiFiUdp.cpp:185] endPacket(): could not send data: 118
+[DEBUG] [Main] Loop/sec: 144511
+[DEBUG] [WIFI] RSSI: 0 dBm, Channel: 14
+[DEBUG] [Utils] No configured motors
+[DEBUG] [Main] Temp: 65.90 °C
+[DEBUG] [WIFI] broadcast message: 
+[ 98570][E][WiFiUdp.cpp:185] endPacket(): could not send data: 118
+[ 98590][V][WiFiGeneric.cpp:363] _arduino_event_cb(): STA Disconnected: SSID: Sl1Er, BSSID: 00:00:00:00:00:00, Reason: 201
+[ 98601][D][WiFiGeneric.cpp:1040] _eventCallback(): Arduino Event: 5 - STA_DISCONNECTED
+[ 98609][W][WiFiGeneric.cpp:1062] _eventCallback(): Reason: 201 - NO_AP_FOUND
+[ 98616][D][WiFiGeneric.cpp:1086] _eventCallback(): WiFi AutoReconnect Running
+[ 98623][V][WiFiGeneric.cpp:97] set_esp_interface_ip(): Configuring Station static IP: 0.0.0.0, MASK: 0.0.0.0, GW: 0.0.0.0
+[DEBUG] [Main] Loop/sec: 137189
+[DEBUG] [WIFI] RSSI: 0 dBm, Channel: 8
+[DEBUG] [Utils] No configured motors
+[DEBUG] [Main] Temp: 67.90 °C
+[DEBUG] [WIFI] broadcast message: 
+[ 99570][E][WiFiUdp.cpp:185] endPacket(): could not send data: 118
+[DEBUG] [Main] Loop/sec: 144183
+[DEBUG] [WIFI] RSSI: 0 dBm, Channel: 13
+[DEBUG] [Utils] No configured motors
+[DEBUG] [Main] Temp: 68.90 °C
+[DEBUG] [WIFI] broadcast message: 
+[100571][E][WiFiUdp.cpp:185] endPacket(): could not send data: 118
+[101043][V][WiFiGeneric.cpp:363] _arduino_event_cb(): STA Disconnected: SSID: Sl1Er, BSSID: 00:00:00:00:00:00, Reason: 201
+[101054][D][WiFiGeneric.cpp:1040] _eventCallback(): Arduino Event: 5 - STA_DISCONNECTED
+[101062][W][WiFiGeneric.cpp:1062] _eventCallback(): Reason: 201 - NO_AP_FOUND
+[101069][D][WiFiGeneric.cpp:1086] _eventCallback(): WiFi AutoReconnect Running
+[101077][V][WiFiGeneric.cpp:97] set_esp_interface_ip(): Configuring Station static IP: 0.0.0.0, MASK: 0.0.0.0, GW: 0.0.0.0
+[DEBUG] [Main] Loop/sec: 137560
+[DEBUG] [WIFI] RSSI: 0 dBm, Channel: 4
+[DEBUG] [Utils] No configured motors
+[DEBUG] [Main] Temp: 66.90 °C
+[DEBUG] [WIFI] broadcast message: 
+[101571][E][WiFiUdp.cpp:185] endPacket(): could not send data: 118
+[DEBUG] [Main] Loop/sec: 143995
+[DEBUG] [WIFI] RSSI: 0 dBm, Channel: 12
+[DEBUG] [Utils] No configured motors
+[DEBUG] [Main] Temp: 65.90 °C
+[DEBUG] [WIFI] broadcast message: 
+[102572][E][WiFiUdp.cpp:185] endPacket(): could not send data: 118
+[103497][V][WiFiGeneric.cpp:363] _arduino_event_cb(): STA Disconnected: SSID: Sl1Er, BSSID: 00:00:00:00:00:00, Reason: 201
+[103508][D][WiFiGeneric.cpp:1040] _eventCallback(): Arduino Event: 5 - STA_DISCONNECTED
+[103516][W][WiFiGeneric.cpp:1062] _eventCallback(): Reason: 201 - NO_AP_FOUND
+[103523][D][WiFiGeneric.cpp:1086] _eventCallback(): WiFi AutoReconnect Running
+[103531][V][WiFiGeneric.cpp:97] set_esp_interface_ip(): Configuring Station static IP: 0.0.0.0, MASK: 0.0.0.0, GW: 0.0.0.0
+[DEBUG] [Main] Loop/sec: 138003
+[DEBUG] [WIFI] RSSI: 0 dBm, Channel: 1
+[DEBUG] [Utils] No configured motors
+[DEBUG] [Main] Temp: 68.90 °C
+[DEBUG] [WIFI] broadcast message: 
+[103572][E][WiFiUdp.cpp:185] endPacket(): could not send data: 118
+[DEBUG] [Main] Loop/sec: 143628
+[DEBUG] [WIFI] RSSI: 0 dBm, Channel: 9
+[DEBUG] [Utils] No configured motors
+[DEBUG] [Main] Temp: 66.90 °C
+[DEBUG] [WIFI] broadcast message: 
+[104573][E][WiFiUdp.cpp:185] endPacket(): could not send data: 118
+[DEBUG] [Main] Loop/sec: 144732
+[DEBUG] [WIFI] RSSI: 0 dBm, Channel: 13
+[DEBUG] [Utils] No configured motors
+[DEBUG] [Main] Temp: 68.90 °C
+[DEBUG] [WIFI] broadcast message: 
+[105573][E][WiFiUdp.cpp:185] endPacket(): could not send data: 118
+[105950][V][WiFiGeneric.cpp:363] _arduino_event_cb(): STA Disconnected: SSID: Sl1Er, BSSID: 00:00:00:00:00:00, Reason: 201
+[105961][D][WiFiGeneric.cpp:1040] _eventCallback(): Arduino Event: 5 - STA_DISCONNECTED
+[105969][W][WiFiGeneric.cpp:1062] _eventCallback(): Reason: 201 - NO_AP_FOUND
+[105976][D][WiFiGeneric.cpp:1086] _eventCallback(): WiFi AutoReconnect Running
+[105984][V][WiFiGeneric.cpp:97] set_esp_interface_ip(): Configuring Station static IP: 0.0.0.0, MASK: 0.0.0.0, GW: 0.0.0.0
+[DEBUG] [Main] Loop/sec: 136999
+[DEBUG] [WIFI] RSSI: 0 dBm, Channel: 5
+[DEBUG] [Utils] No configured motors
+[DEBUG] [Main] Temp: 67.90 °C
+[DEBUG] [WIFI] broadcast message: 
+[106574][E][WiFiUdp.cpp:185] endPacket(): could not send data: 118
+[DEBUG] [Main] Loop/sec: 144394
+[DEBUG] [WIFI] RSSI: 0 dBm, Channel: 12
+[DEBUG] [Utils] No configured motors
+[DEBUG] [Main] Temp: 68.90 °C
+[DEBUG] [WIFI] broadcast message: 
+[107574][E][WiFiUdp.cpp:185] endPacket(): could not send data: 118
+[108404][V][WiFiGeneric.cpp:363] _arduino_event_cb(): STA Disconnected: SSID: Sl1Er, BSSID: 00:00:00:00:00:00, Reason: 201
+[108415][D][WiFiGeneric.cpp:1040] _eventCallback(): Arduino Event: 5 - STA_DISCONNECTED
+[108423][W][WiFiGeneric.cpp:1062] _eventCallback(): Reason: 201 - NO_AP_FOUND
+[108430][D][WiFiGeneric.cpp:1086] _eventCallback(): WiFi AutoReconnect Running
+[108438][V][WiFiGeneric.cpp:97] set_esp_interface_ip(): Configuring Station static IP: 0.0.0.0, MASK: 0.0.0.0, GW: 0.0.0.0
+[DEBUG] [Main] Loop/sec: 137515
+[DEBUG] [WIFI] RSSI: 0 dBm, Channel: 2
+[DEBUG] [Utils] No configured motors
+[DEBUG] [Main] Temp: 67.90 °C
+[DEBUG] [WIFI] broadcast message: 
+[108575][E][WiFiUdp.cpp:185] endPacket(): could not send data: 118
+[DEBUG] [Main] Loop/sec: 144143
+[DEBUG] [WIFI] RSSI: 0 dBm, Channel: 10
+[DEBUG] [Utils] No configured motors
+[DEBUG] [Main] Temp: 69.90 °C
+[DEBUG] [WIFI] broadcast message: 
+[109575][E][WiFiUdp.cpp:185] endPacket(): could not send data: 118
+[DEBUG] [Main] Loop/sec: 144329
+[DEBUG] [WIFI] RSSI: 0 dBm, Channel: 14
+[DEBUG] [Utils] No configured motors
+[DEBUG] [Main] Temp: 69.90 °C
+[DEBUG] [WIFI] broadcast message: 
+[110576][E][WiFiUdp.cpp:185] endPacket(): could not send data: 118
+[110858][V][WiFiGeneric.cpp:363] _arduino_event_cb(): STA Disconnected: SSID: Sl1Er, BSSID: 00:00:00:00:00:00, Reason: 201
+[110869][D][WiFiGeneric.cpp:1040] _eventCallback(): Arduino Event: 5 - STA_DISCONNECTED
+[110877][W][WiFiGeneric.cpp:1062] _eventCallback(): Reason: 201 - NO_AP_FOUND
+[110884][D][WiFiGeneric.cpp:1086] _eventCallback(): WiFi AutoReconnect Running
+[110891][V][WiFiGeneric.cpp:97] set_esp_interface_ip(): Configuring Station static IP: 0.0.0.0, MASK: 0.0.0.0, GW: 0.0.0.0
+[DEBUG] [Main] Loop/sec: 137376
+[DEBUG] [WIFI] RSSI: 0 dBm, Channel: 6
+[DEBUG] [Utils] No configured motors
+[DEBUG] [Main] Temp: 67.90 °C
+[DEBUG] [WIFI] broadcast message: 
+[111576][E][WiFiUdp.cpp:185] endPacket(): could not send data: 118
+[DEBUG] [Main] Loop/sec: 144050
+[DEBUG] [WIFI] RSSI: 0 dBm, Channel: 12
+[DEBUG] [Utils] No configured motors
+[DEBUG] [Main] Temp: 67.90 °C
+[DEBUG] [WIFI] broadcast message: 
+[112577][E][WiFiUdp.cpp:185] endPacket(): could not send data: 118
+[113311][V][WiFiGeneric.cpp:363] _arduino_event_cb(): STA Disconnected: SSID: Sl1Er, BSSID: 00:00:00:00:00:00, Reason: 201
+[113322][D][WiFiGeneric.cpp:1040] _eventCallback(): Arduino Event: 5 - STA_DISCONNECTED
+[113330][W][WiFiGeneric.cpp:1062] _eventCallback(): Reason: 201 - NO_AP_FOUND
+[113337][D][WiFiGeneric.cpp:1086] _eventCallback(): WiFi AutoReconnect Running
+[113345][V][WiFiGeneric.cpp:97] set_esp_interface_ip(): Configuring Station static IP: 0.0.0.0, MASK: 0.0.0.0, GW: 0.0.0.0
+[DEBUG] [Main] Loop/sec: 137767
+[DEBUG] [WIFI] RSSI: 0 dBm, Channel: 2
+[DEBUG] [Utils] No configured motors
+[DEBUG] [Main] Temp: 69.90 °C
+[DEBUG] [WIFI] broadcast message: 
+[113577][E][WiFiUdp.cpp:185] endPacket(): could not send data: 118
+[DEBUG] [Main] Loop/sec: 143650
+[DEBUG] [WIFI] RSSI: 0 dBm, Channel: 11
+[DEBUG] [Utils] No configured motors
+[DEBUG] [Main] Temp: 67.90 °C
+[DEBUG] [WIFI] broadcast message: 
+[114578][E][WiFiUdp.cpp:185] endPacket(): could not send data: 118
+[DEBUG] [Main] Loop/sec: 144836
+[DEBUG] [WIFI] RSSI: 0 dBm, Channel: 14
+[DEBUG] [Utils] No configured motors
+[DEBUG] [Main] Temp: 69.90 °C
+[DEBUG] [WIFI] broadcast message: 
+[115578][E][WiFiUdp.cpp:185] endPacket(): could not send data: 118
+[115765][V][WiFiGeneric.cpp:363] _arduino_event_cb(): STA Disconnected: SSID: Sl1Er, BSSID: 00:00:00:00:00:00, Reason: 201
+[115776][D][WiFiGeneric.cpp:1040] _eventCallback(): Arduino Event: 5 - STA_DISCONNECTED
+[115784][W][WiFiGeneric.cpp:1062] _eventCallback(): Reason: 201 - NO_AP_FOUND
+[115791][D][WiFiGeneric.cpp:1086] _eventCallback(): WiFi AutoReconnect Running
+[115799][V][WiFiGeneric.cpp:97] set_esp_interface_ip(): Configuring Station static IP: 0.0.0.0, MASK: 0.0.0.0, GW: 0.0.0.0
+[DEBUG] [Main] Loop/sec: 136889
+[DEBUG] [WIFI] RSSI: 0 dBm, Channel: 7
+[DEBUG] [Utils] No configured motors
+[DEBUG] [Main] Temp: 68.90 °C
+[DEBUG] [WIFI] broadcast message: 
+[116579][E][WiFiUdp.cpp:185] endPacket(): could not send data: 118
+[DEBUG] [Main] Loop/sec: 144528
+[DEBUG] [WIFI] RSSI: 0 dBm, Channel: 13
+[DEBUG] [Utils] No configured motors
+[DEBUG] [Main] Temp: 69.90 °C
+[DEBUG] [WIFI] broadcast message: 
+[117579][E][WiFiUdp.cpp:185] endPacket(): could not send data: 118
+[118218][V][WiFiGeneric.cpp:363] _arduino_event_cb(): STA Disconnected: SSID: Sl1Er, BSSID: 00:00:00:00:00:00, Reason: 201
+[118230][D][WiFiGeneric.cpp:1040] _eventCallback(): Arduino Event: 5 - STA_DISCONNECTED
+[118237][W][WiFiGeneric.cpp:1062] _eventCallback(): Reason: 201 - NO_AP_FOUND
+[118244][D][WiFiGeneric.cpp:1086] _eventCallback(): WiFi AutoReconnect Running
+[118252][V][WiFiGeneric.cpp:97] set_esp_interface_ip(): Configuring Station static IP: 0.0.0.0, MASK: 0.0.0.0, GW: 0.0.0.0
+[DEBUG] [Main] Loop/sec: 137170
+[DEBUG] [WIFI] RSSI: 0 dBm, Channel: 3
+[DEBUG] [Utils] No configured motors
+[DEBUG] [Main] Temp: 67.90 °C
+[DEBUG] [WIFI] broadcast message: 
+[118580][E][WiFiUdp.cpp:185] endPacket(): could not send data: 118
+[DEBUG] [Main] Loop/sec: 144258
+[DEBUG] [WIFI] RSSI: 0 dBm, Channel: 11
+[DEBUG] [Utils] No configured motors
+[DEBUG] [Main] Temp: 69.90 °C
+[DEBUG] [WIFI] broadcast message: 
+[119580][E][WiFiUdp.cpp:185] endPacket(): could not send data: 118
+[DEBUG] [Main] Loop/sec: 144463
+[DEBUG] [WIFI] RSSI: 0 dBm, Channel: 14
+[DEBUG] [Utils] No configured motors
+[DEBUG] [Main] Temp: 69.90 °C
+[DEBUG] [WIFI] broadcast message: 
+[120581][E][WiFiUdp.cpp:185] endPacket(): could not send data: 118
+[120672][V][WiFiGeneric.cpp:363] _arduino_event_cb(): STA Disconnected: SSID: Sl1Er, BSSID: 00:00:00:00:00:00, Reason: 201
+[120683][D][WiFiGeneric.cpp:1040] _eventCallback(): Arduino Event: 5 - STA_DISCONNECTED
+[120691][W][WiFiGeneric.cpp:1062] _eventCallback(): Reason: 201 - NO_AP_FOUND
+[120698][D][WiFiGeneric.cpp:1086] _eventCallback(): WiFi AutoReconnect Running
+[120706][V][WiFiGeneric.cpp:97] set_esp_interface_ip(): Configuring Station static IP: 0.0.0.0, MASK: 0.0.0.0, GW: 0.0.0.0
