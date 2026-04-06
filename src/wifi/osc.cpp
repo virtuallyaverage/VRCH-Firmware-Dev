@@ -74,8 +74,6 @@ namespace Haptics
             const String selfIP = WiFi.localIP().toString();
             logger.debug("Connected @ %s", selfIP);
 
-            OTA::otaSetup(OTA_PASS);
-
             // Start listening for OSC server
             OscWiFi.subscribe(RECIEVE_PORT, PING_ADDRESS, &handlePing);
             logger.debug("Server started on port: %d", RECIEVE_PORT);
@@ -97,6 +95,8 @@ namespace Haptics
             #else
                 BroadcastUdpClient.beginMulticast(IPAddress(MULTICAST_GROUP), MULTICAST_PORT);
             #endif
+
+            OTA::otaSetup(OTA_PASS);
         }
 
         void Broadcast()

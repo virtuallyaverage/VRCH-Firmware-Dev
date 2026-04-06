@@ -143,6 +143,7 @@ void loop()
 	// Moves heavy lifting out of ISR's
 	if (Haptics::globals.updatedMotors)
 	{
+		// if we were sent a command over OSC
 		Haptics::globals.updatedMotors = false;
 		Haptics::Wireless::updateMotorVals();
 		#ifdef ESP8266
@@ -201,6 +202,7 @@ void loop()
 		// if we arent connected we should broadcast each second
 		if (now - Haptics::lastPacketMs > 3000)
 		{
+			logger.debug("No messages, starting broadcast");
 			// Reset all motors to zero if we don't have a connection.
 			for (uint16_t i = 0; i < MAX_MOTORS; i++) {
 				Haptics::globals.allMotorVals[i] = 0;

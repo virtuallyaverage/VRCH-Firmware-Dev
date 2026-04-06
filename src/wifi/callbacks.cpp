@@ -173,6 +173,7 @@ namespace Haptics
         void motorMessage_callback(const OscMessage &message)
         {
             lastPacketMs = millis();
+            Haptics::lastPacketMs = lastPacketMs;
 
             if (first_packet)
             {
