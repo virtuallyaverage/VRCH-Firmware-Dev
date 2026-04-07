@@ -172,6 +172,7 @@ namespace Haptics
 
         void motorMessage_callback(const OscMessage &message)
         {
+            Haptics::globals.packetCount++;
             lastPacketMs = millis();
             Haptics::lastPacketMs = lastPacketMs;
 
@@ -205,6 +206,7 @@ namespace Haptics
 
         void commandMessageCallback(const OscMessage &msg)
         {
+            Haptics::globals.packetCount++;
             // schedule processing the command on the next cycle.
             Haptics::globals.commandToProcess = msg.arg<String>(0);
             Haptics::globals.processOscCommand = true;

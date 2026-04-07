@@ -184,6 +184,9 @@ void loop()
 	// handle debug stuff once every second
 	if (now - lastSerialPush >= 1000)
 	{
+		logger.debug("Packets/sec: %lu", Haptics::globals.packetCount);
+		Haptics::globals.packetCount = 0;
+
 		logger.debug("Loop/sec: %d", ticks);
 		Haptics::Wireless::printMetrics();
 		Haptics::PwmUtils::printAllDuty();
@@ -200,7 +203,7 @@ void loop()
 
 		// we should recieve atleast one message over a second if we are connected/
 		// if we arent connected we should broadcast each second
-		if (now - Haptics::lastPacketMs > 3000)
+		if (millis() - Haptics::lastPacketMs > 3000)
 		{
 			logger.debug("No messages, starting broadcast");
 			// Reset all motors to zero if we don't have a connection.

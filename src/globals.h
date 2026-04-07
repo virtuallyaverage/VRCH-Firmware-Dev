@@ -24,6 +24,7 @@ namespace Haptics {
         bool beenPinged;
         String commandToProcess;
         bool messageRecieved;
+        unsigned long packetCount;
     };
 
     inline Globals initGlobals() {
