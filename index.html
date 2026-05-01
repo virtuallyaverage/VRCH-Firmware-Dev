@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Haptic Firmware Flasher</title>
+  <script type="module" src="https://unpkg.com/esp-web-tools@10/dist/web/install-button.js?module"></script>
+  <style>
+    body { font-family: system-ui; max-width: 480px; margin: 80px auto; text-align: center; background-color: #888;}
+    select { font-size: 1rem; padding: 6px 12px; margin: 12px 0; }
+    .status { color: #888; font-size: 0.9rem; }
+    .error { color: #c00; }
+  </style>
+</head>
+<body>
+  <h1>Firmware Flasher</h1>
+  <p>Connect your ESP board via USB and click install.<br>
+     The board type is detected automatically.</p>
+
+  <label for="version">Version:</label>
+  <select id="version">
+    <option value="">Loading releases…</option>
+  </select>
+
+  <br><br>
+
+  <esp-web-install-button id="flash-btn">
+    <button slot="activate">Install Firmware</button>
+  </esp-web-install-button>
+
+  <p id="status" class="status"></p>
+  <p><small>Requires Chrome or Edge. Use a data-capable USB cable.</small></p>
+
+  <script type="module">
+    // Derive owner/repo from GitHub Pages URL automatically
+    // e.g. https://owner.github.io/repo/ 
+    const host = window.location.hostname;
+    const owner = host.split('.')[0];
+    const repo = window.location.pathname.split('/').filter(Boolean)[0];
+
+    const versionSelect = document.getElementById('version');
+    const flashBtn = document.getElementById('flash-btn');
+    const status = document.getElementById('status');
+
+    const CHIP_FAMILIES = {
+      'esp32':   'ESP32',
+      'esp32s2': 'ESP32-S2',
+      'esp32s3': 'ESP32-S3',
+      'esp32c3': 'ESP32-C3',
+      'esp32c6': 'ESP32-C6',
+      'esp32h2': 'ESP32-H2',
+      'esp8266': 'ESP8266',
+    };
+
+    async function loadReleases() {
+      try {
+        const res = await fetch(
+          `https://api.github.com/repos/${owner}/${repo}/releases`
+        );
+        if (!res.ok) throw new Error(`GitHub API ${res.status}`);
+        const releases = await res.json();
+
+        // Filter to non-draft releases that have .bin assets
+        const valid = releases.filter(r =>
+          !r.draft && r.assets.some(a => a.name.endsWith('.bin'))
+        );
+
+        if (!valid.length) {
+          status.textContent = 'No releases with firmware found.';
+          status.classList.add('error');
+          return;
+        }
+
+        versionSelect.innerHTML = '';
+        valid.forEach((r, i) => {
+          const opt = document.createElement('option');
+          opt.value = r.tag_name;
+          opt.textContent = `${r.tag_name}${i === 0 ? ' (latest)' : ''}`;
+          opt.dataset.assets = JSON.stringify(
+            r.assets
+              .filter(a => a.name.endsWith('.bin'))
+              .map(a => ({ name: a.name, url: a.browser_download_url }))
+          );
+          versionSelect.appendChild(opt);
+        });
+
+        updateManifest();
+      } catch (e) {
+        status.textContent = `Failed to load releases: ${e.message}`;
+        status.classList.add('error');
+      }
+    }
+
+    function buildManifest(assets) {
+        const builds = [];
+
+        // Sort by chip name length descending so "esp32s3" matches before "esp32"
+        const chips = Object.entries(CHIP_FAMILIES)
+            .sort((a, b) => b[0].length - a[0].length);
+
+        const claimed = new Set();
+
+        for (const [chip, family] of chips) {
+            const match = assets.find(a =>
+            !claimed.has(a.name) &&
+            a.name.toLowerCase().includes(chip) &&
+            a.name.includes('merged')
+            );
+            if (match) {
+            claimed.add(match.name);
+            builds.push({
+                chipFamily: family,
+                parts: [{ path: match.url, offset: 0 }],
+            });
+            }
+        }
+
+        // ESP8266 won't have "merged" in the name
+        const esp8266 = assets.find(a =>
+            !claimed.has(a.name) &&
+            a.name.toLowerCase().includes('esp8266')
+        );
+        if (esp8266) {
+            builds.push({
+            chipFamily: 'ESP8266',
+            parts: [{ path: esp8266.url, offset: 0 }],
+            });
+        }
+
+        return { name: 'Haptic Firmware', builds };
+    }
+
+    function updateManifest() {
+      const selected = versionSelect.selectedOptions[0];
+      if (!selected?.dataset.assets) return;
+
+      const assets = JSON.parse(selected.dataset.assets);
+      const manifest = buildManifest(assets);
+
+      if (!manifest.builds.length) {
+        status.textContent = 'No compatible firmware found in this release.';
+        status.classList.add('error');
+        flashBtn.removeAttribute('manifest');
+        return;
+      }
+
+      status.textContent = `${manifest.builds.length} board type(s) available.`;
+      status.classList.remove('error');
+
+      // Create manifest as a blob URL — no hosted file needed
+      const blob = new Blob([JSON.stringify(manifest)], { type: 'application/json' });
+      flashBtn.setAttribute('manifest', URL.createObjectURL(blob));
+    }
+
+    versionSelect.addEventListener('change', updateManifest);
+    loadReleases();
+  </script>
+</body>
+</html>

@@ -70,6 +70,49 @@ jobs: # Based off WLED Build scripts: https://github.com/wled/WLED/blob/b60313e1
         mkdir -p build_output/release
         cp .pio/build/${{ matrix.environment }}/firmware.bin build_output/release/haptics_${{ matrix.environment }}.bin
 
+    - name: Generate ESP Web Tools manifest
+      run: |
+        python3 -c "
+        import json, glob, os
+
+        # Map PIO env names to ESP Web Tools chip families
+        CHIP_MAP = {
+            'esp32':    'ESP32',
+            'esp32s2':  'ESP32-S2',
+            'esp32s3':  'ESP32-S3',
+            'esp32c3':  'ESP32-C3',
+            'esp32c6':  'ESP32-C6',
+            'esp32h2':  'ESP32-H2',
+            'esp8266':  'ESP8266',
+        }
+
+        builds = []
+        for env_name, family in CHIP_MAP.items():
+            # ESP32 variants use merged binaries
+            merged = glob.glob(f'*{env_name}*-merged.bin')
+            single = glob.glob(f'*{env_name}*.bin') if not merged else []
+
+            if merged:
+                builds.append({
+                    'chipFamily': family,
+                    'parts': [{'path': os.path.basename(merged[0]), 'offset': 0}]
+                })
+            elif single:
+                builds.append({
+                    'chipFamily': family,
+                    'parts': [{'path': os.path.basename(single[0]), 'offset': 0}]
+                })
+
+        manifest = {
+            'name': 'VRCH-FW',
+            'builds': builds
+        }
+
+        with open('manifest.json', 'w') as f:
+            json.dump(manifest, f, indent=2)
+        print(json.dumps(manifest, indent=2))
+        "
+
     - uses: actions/upload-artifact@v4
       with:
         name: firmware-${{ matrix.environment }}
