@@ -80,6 +80,7 @@ jobs: # Based off WLED Build scripts: https://github.com/wled/WLED/blob/b60313e1
     - uses: actions/upload-artifact@v4
       with:
         name: firmware-${{ matrix.environment }}
+        overwrite: true
         path: |
           build_output/release/*.bin
           build_output/release/*_ESP02*.bin.gz]
