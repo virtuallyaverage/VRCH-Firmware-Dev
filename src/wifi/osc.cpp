@@ -1,6 +1,8 @@
 #include "wifi/callbacks.h"
 #include "logging/Logger.h"
 #include "wifi/osc.h"
+#include "globals.h"
+#include "ota.h"
 
 namespace Haptics
 {
@@ -13,11 +15,12 @@ namespace Haptics
         }
 
         /// @brief start mDNS and OSC
+        /// Must be able to return early if wifi doens't connect without issues.
         void Start(Haptics::Conf::Config *conf)
         {
 
             WiFi.mode(WIFI_STA);
-            WiFi.setSleep(false); // thanks Daky
+            //WiFi.setSleep(false); Disabled in favor of fake packet sending.
 
             // Start WiFi connection
             WiFi.begin(conf->wifi_ssid, conf->wifi_password);
@@ -33,6 +36,7 @@ namespace Haptics
             if (WiFi.status() != WL_CONNECTED)
             {
                 logger.warn("WiFi connect failed");
+                return;
             }
 
             switch (conf->transmit_power)
@@ -86,21 +90,37 @@ namespace Haptics
             broadcastMessage += "}";
 
             // ESP8266 beginMulticast requires interface address
-#if defined(ESP8266)
-            udpClient.beginMulticast(WiFi.localIP(), IPAddress(MULTICAST_GROUP), MULTICAST_PORT);
-#else
-            udpClient.beginMulticast(IPAddress(MULTICAST_GROUP), MULTICAST_PORT);
-#endif
-            Broadcast(); // broadcast first time
+            #if defined(ESP8266)
+                BroadcastUdpClient.beginMulticast(WiFi.localIP(), IPAddress(MULTICAST_GROUP), MULTICAST_PORT);
+            #else
+                BroadcastUdpClient.beginMulticast(IPAddress(MULTICAST_GROUP), MULTICAST_PORT);
+            #endif
+
+            OTA::otaSetup(OTA_PASS);
         }
 
         void Broadcast()
         {
             // Send broadcast
             logger.debug("broadcast message: %s", broadcastMessage.c_str());
-            udpClient.beginPacket(IPAddress(MULTICAST_GROUP), MULTICAST_PORT);
-            udpClient.write((uint8_t *)broadcastMessage.c_str(), broadcastMessage.length()); // Send data
-            udpClient.endPacket();                                                           // Ensure packet is sent
+    
+            // set our client to send to multicast
+            #if defined(ESP8266)
+                BroadcastUdpClient.beginMulticast(WiFi.localIP(), IPAddress(MULTICAST_GROUP), MULTICAST_PORT);
+            #else
+                BroadcastUdpClient.beginMulticast(IPAddress(MULTICAST_GROUP), MULTICAST_PORT);
+            #endif
+            
+            #if defined(ESP8266)
+                BroadcastUdpClient.beginPacketMulticast(IPAddress(MULTICAST_GROUP), MULTICAST_PORT, WiFi.localIP(), 2);
+            #else
+                BroadcastUdpClient.beginMulticastPacket();
+            #endif
+            BroadcastUdpClient.write((uint8_t *)broadcastMessage.c_str(), broadcastMessage.length()); // Send data
+            BroadcastUdpClient.endPacket();
+
+            // set back to normal
+            BroadcastUdpClient.begin(SEND_PORT);
         }
 
         bool WiFiConnected()
@@ -127,13 +147,14 @@ namespace Haptics
             // In that case the port, ip, and other values should be reinited
 
             sendPort = message.arg<uint16_t>(0); // Get the host's port from the message
-            hostIP = message.remoteIP();         // Get the host's IP address
+            hostIP_str = message.remoteIP();         // Get the host's IP address
+            hostIP.fromString(hostIP_str);
 
             // create our own recieving server
             OscWiFi.subscribe(RECIEVE_PORT, MOTOR_ADDRESS, &motorMessage_callback);
             OscWiFi.subscribe(RECIEVE_PORT, COMMAND_ADDRESS, &commandMessageCallback);
 
-            logger.debug("Received ping from: %s", hostIP);
+            logger.debug("Received ping from: %s", hostIP_str);
 
             // sending client
             oscClient = OscWiFi.getClient();
@@ -142,16 +163,45 @@ namespace Haptics
             OscMessage pingResponse(PING_ADDRESS);
             pingResponse.pushInt32(RECIEVE_PORT);
             pingResponse.pushString(WiFi.macAddress());
-            oscClient.send(hostIP, sendPort, pingResponse);
-            logger.debug("Sending hrtbt to %s:%d", hostIP, sendPort);
+            oscClient.send(hostIP_str, sendPort, pingResponse);
+            logger.debug("Sending hrtbt to %s:%d", hostIP_str, sendPort);
 
-            StartHeartBeat(hostIP, sendPort);
+            StartHeartBeat(hostIP_str, sendPort);
             globals.beenPinged = true;
         }
 
         /// @brief Push and pull OSC updates
         void Tick()
         {
+
+            if (WiFi.status() != WL_CONNECTED) return;
+
+            // run ota ticker
+            if (otaTicker*WIRELESS_TICK_MS >= OTA_UPDATE_MS) {
+                OTA::otaUpdate();
+                otaTicker = 0;
+            } else otaTicker += 1;
+
+            // run keep alive packet sending
+            switch (Haptics::Conf::conf.radio_keepalive_level) {
+                case RADIO_KEEPALIVE_OFF:
+                    break;
+                case RADIO_KEEPALIVE_BALANCED:
+                    if (keepaliveTicker*WIRELESS_TICK_MS >= RADIO_KEEPALIVE_BALANCED_MS) {
+                        BroadcastUdpClient.beginPacket(hostIP, sendPort);
+                        BroadcastUdpClient.endPacket();
+                        keepaliveTicker = 0;
+                    } else keepaliveTicker += 1;
+                    break;
+                case RADIO_KEEPALIVE_AGGRESSIVE:
+                    if (keepaliveTicker*WIRELESS_TICK_MS >= RADIO_KEEPALIVE_AGGRESSIVE_MS) {
+                        BroadcastUdpClient.beginPacket(hostIP, sendPort);
+                        BroadcastUdpClient.endPacket();
+                        keepaliveTicker = 0;
+                    } else keepaliveTicker += 1;
+                    break;
+            }
+
             OscWiFi.update(); // should be called to subscribe + publish osc
         }
 

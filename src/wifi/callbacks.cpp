@@ -148,8 +148,6 @@ namespace Haptics
         ///
         void updateMotorVals()
         {
-            lastPacketMs = millis();
-
             const uint16_t totalMotors = Haptics::Conf::conf.motor_map_i2c_num + Haptics::Conf::conf.motor_map_ledc_num;
             const int64_t bumpTime = Haptics::Conf::conf.bump_time_us;
             // Get microsecond timestamp for both platforms
@@ -174,7 +172,9 @@ namespace Haptics
 
         void motorMessage_callback(const OscMessage &message)
         {
+            Haptics::globals.packetCount++;
             lastPacketMs = millis();
+            Haptics::lastPacketMs = lastPacketMs;
 
             if (first_packet)
             {
@@ -206,6 +206,7 @@ namespace Haptics
 
         void commandMessageCallback(const OscMessage &msg)
         {
+            Haptics::globals.packetCount++;
             // schedule processing the command on the next cycle.
             Haptics::globals.commandToProcess = msg.arg<String>(0);
             Haptics::globals.processOscCommand = true;

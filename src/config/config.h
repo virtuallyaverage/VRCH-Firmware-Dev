@@ -33,6 +33,8 @@ namespace Conf {
         int64_t bump_time_us;
         /// @brief  Motor values below this threshold will activate a bump, if the previous value was zero.
         uint16_t bump_start_threshold; 
+        /// @brief Sets radio management pings to either 0 = off, 1=medium, 2=aggressive
+        uint8_t radio_keepalive_level;
         /// @brief The current configuration version.
         uint16_t config_version;
     }; 
@@ -43,7 +45,7 @@ namespace Conf {
     const Config defaultConfig = {
     "HapticsDevices", //ssid
     "95815480", //password
-    2, // highest transmit power
+    1, // medium transmit power helps with SuperMini Boards
     "VRCHaptics", // name that will be displayed on the gui
     "", // Will be set via Serial or wifi.
     SCL, // scl default of board
@@ -55,7 +57,8 @@ namespace Conf {
     {0},
     10000, // 10ms (May need to be lowered.)
     20000, // ~30%
-    CONFIG_VERSION
+    1,
+    CONFIG_VERSION // Should be last 
     };
 
     /// @brief Loads config to global instance
@@ -107,6 +110,7 @@ namespace Conf {
         CONFIG_FIELD_ARRAY(motor_map_ledc, CONFIG_TYPE_UINT16, MAX_LEDC_MOTORS),
         CONFIG_FIELD(bump_time_us,  CONFIG_TYPE_INT64, 0),
         CONFIG_FIELD(bump_start_threshold, CONFIG_TYPE_UINT16, 0),
+        CONFIG_FIELD(radio_keepalive_level, CONFIG_TYPE_UINT8, 0),
         CONFIG_FIELD(config_version, CONFIG_TYPE_UINT16, 0)
     };
     static const size_t configFieldsCount = sizeof(configFields) / sizeof(configFields[0]);

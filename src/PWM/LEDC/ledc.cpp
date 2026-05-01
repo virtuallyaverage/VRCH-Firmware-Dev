@@ -9,7 +9,7 @@ const double_t UpdateFrequency = LEDC_FREQUENCY;
 const unsigned long tickPeriod = (1./UpdateFrequency)*1000000; // microseconds
 const unsigned long tockPeriod = tickPeriod / (1 << LEDC_RESOLUTION); // microseconds
 
-volatile uint8_t phase = 0;
+volatile uint16_t phase = 0;
 
 #ifdef ESP8266
 // ESP8266 uses built-in analogWrite()
@@ -31,18 +31,29 @@ void updateESP8266PWM() {
 // ESP32-specific implementation
 void IRAM_ATTR pwm_isr()
 {
-    uint32_t setMask = 0;   // pins to drive HIGH this sub‑cycle
-    uint32_t clrMask = 0;   // pins to drive LOW  this sub‑cycle
+    uint32_t setMask0 = 0, clrMask0 = 0; // GPIOs 0-31
+    uint32_t setMask1 = 0, clrMask1 = 0; // GPIOs 32+
 
     for (int motor = 0; motor < Haptics::Conf::conf.motor_map_ledc_num; ++motor) {
-        uint32_t bit = 1UL << Haptics::Conf::conf.motor_map_ledc[motor];
-        if (Haptics::globals.ledcMotorVals[motor] > phase) setMask |= bit;
-        else clrMask |= bit;
+        uint8_t pin = Haptics::Conf::conf.motor_map_ledc[motor];
+        bool on = Haptics::globals.ledcMotorVals[motor] > phase;
+
+        if (pin < 32) {
+            uint32_t bit = 1UL << pin;
+            if (on) setMask0 |= bit; else clrMask0 |= bit;
+        } else {
+            uint32_t bit = 1UL << (pin - 32);
+            if (on) setMask1 |= bit; else clrMask1 |= bit;
+        }
     }
 
-    REG_WRITE(GPIO_OUT_W1TS_REG, setMask);
-    REG_WRITE(GPIO_OUT_W1TC_REG, clrMask);
-    /* advance PWM phase */
+    if (setMask0) REG_WRITE(GPIO_OUT_W1TS_REG, setMask0);
+    if (clrMask0) REG_WRITE(GPIO_OUT_W1TC_REG, clrMask0);
+    #if SOC_GPIO_PIN_COUNT > 32
+    if (setMask1) REG_WRITE(GPIO_OUT1_W1TS_REG, setMask1);
+    if (clrMask1) REG_WRITE(GPIO_OUT1_W1TC_REG, clrMask1);
+    #endif
+
     if (++phase == 1 << LEDC_RESOLUTION) phase = 0;
 }
 #endif

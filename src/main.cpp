@@ -9,8 +9,6 @@
 #include <esp_bt.h>
 #endif
 
-#include "ota.h"
-
 // main config files
 #include "globals.h"
 #include "config/config.h"
@@ -59,9 +57,14 @@ void setup()
 	Haptics::initGlobals();
 
 	Haptics::Wireless::Start(&Haptics::Conf::conf);
-	OTA::otaSetup(OTA_PASS);
-	Haptics::PCA::start(&Haptics::Conf::conf);
-	Haptics::LEDC::start(&Haptics::Conf::conf);
+	if (Haptics::Conf::conf.motor_map_i2c_num) {
+		Haptics::PCA::start(&Haptics::Conf::conf);
+	}
+	if (Haptics::Conf::conf.motor_map_ledc_num) {
+		Haptics::LEDC::start(&Haptics::Conf::conf);
+	}
+	logger.debug("Finished initialization");
+	
 }
 
 void enterLimp()
@@ -122,13 +125,10 @@ time_t lastOtaTick = millis();
 uint32_t loopStart = 0;
 uint32_t loopTotal = 0;
 bool messageRecieved = false;
+uint8_t messages = 0;
 
 void loop()
 {
-	if (now - lastOtaTick >= OTA_UPDATE_MS) {
-		OTA::otaUpdate();
-		lastOtaTick = millis();
-	}
 
 	if (Haptics::globals.reinitLEDC)
 	{ // prevents not defined error
@@ -143,6 +143,7 @@ void loop()
 	// Moves heavy lifting out of ISR's
 	if (Haptics::globals.updatedMotors)
 	{
+		// if we were sent a command over OSC
 		Haptics::globals.updatedMotors = false;
 		Haptics::Wireless::updateMotorVals();
 		#ifdef ESP8266
@@ -154,11 +155,12 @@ void loop()
 	if (Haptics::globals.processOscCommand)
 	{
 		// if we were sent a command over OSC
+		Haptics::lastPacketMs = millis();
 		messageRecieved = true;
 		const String response = Haptics::Conf::Parser::parseInput(Haptics::globals.commandToProcess);
 		OscMessage commandResponse(COMMAND_ADDRESS);
 		commandResponse.pushString(response);
-		Haptics::Wireless::oscClient.send(Haptics::Wireless::hostIP, Haptics::Wireless::sendPort, commandResponse);
+		Haptics::Wireless::oscClient.send(Haptics::Wireless::hostIP_str, Haptics::Wireless::sendPort, commandResponse);
 		Haptics::globals.commandToProcess = "";
 		Haptics::globals.processOscCommand = false;
 	}
@@ -173,14 +175,18 @@ void loop()
 
 	ticks += 1;
 	now = millis();
-	if (now - lastWifiTick >= 7)
-	{ // Roughly 150hz
+	if (now - lastWifiTick >= WIRELESS_TICK_MS)
+	{ 
 		Haptics::Wireless::Tick();
 		lastWifiTick = now;
 	}
 
+	// handle debug stuff once every second
 	if (now - lastSerialPush >= 1000)
 	{
+		logger.debug("Packets/sec: %lu", Haptics::globals.packetCount);
+		Haptics::globals.packetCount = 0;
+
 		logger.debug("Loop/sec: %d", ticks);
 		Haptics::Wireless::printMetrics();
 		Haptics::PwmUtils::printAllDuty();
@@ -198,8 +204,9 @@ void loop()
 
 		// we should recieve atleast one message over a second if we are connected/
 		// if we arent connected we should broadcast each second
-		if (now - Haptics::lastPacketMs > 1000)
+		if (millis() - Haptics::lastPacketMs > 3000)
 		{
+			logger.debug("No messages, starting broadcast");
 			// Reset all motors to zero if we don't have a connection.
 			for (uint16_t i = 0; i < MAX_MOTORS; i++) {
 				Haptics::globals.allMotorVals[i] = 0;
