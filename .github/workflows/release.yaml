@@ -39,5 +39,5 @@ jobs:
         draft: True
         tag_name: ${{ github.event.inputs.version != '' && github.event.inputs.version || github.ref_name }}
         files: |
-          *.bin
-          *.bin.gz
+          build_output/release/*.bin
+          build_output/merged/*.bin
