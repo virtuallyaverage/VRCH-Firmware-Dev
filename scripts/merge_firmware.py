@@ -5,7 +5,7 @@ def merge_firmware(source, target, env):
 
     platform = env.get("PIOPLATFORM")
     if platform == "espressif8266":
-        return  # ESP8266 already produces a single binary
+        return
 
     chip = {
         "espressif32": env.BoardConfig().get("build.mcu", "esp32")
@@ -18,7 +18,6 @@ def merge_firmware(source, target, env):
 
     fw_name = env.subst("$PIOENV")
 
-    # Offsets vary by chip
     if chip in ("esp32", "esp32s2", "esp32s3"):
         bootloader_offset = "0x1000" if chip == "esp32" else "0x0"
     elif chip in ("esp32c3", "esp32c6", "esp32h2"):
@@ -43,8 +42,14 @@ def merge_firmware(source, target, env):
 
     flash_size = env.BoardConfig().get("upload.flash_size", "4MB")
 
+    # Use PlatformIO's bundled esptool instead of system Python
+    esptool = os.path.join(
+        env.PioPlatform().get_package_dir("tool-esptoolpy"),
+        "esptool.py"
+    )
+
     subprocess.check_call([
-        env.subst("$PYTHONEXE"), "-m", "esptool",
+        env.subst("$PYTHONEXE"), esptool,
         "--chip", chip,
         "merge_bin", "-o", output,
         "--flash_mode", "dio",
